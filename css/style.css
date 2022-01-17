@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Baloo 2", cursive;
+    background: rgb(109,110,113);
+    background: linear-gradient(0deg, rgba(109,110,113,0.4009978991596639) 40%, rgba(109,110,113,0.14049369747899154) 54%);
+    
+}
+
+h1,
+h2,
+h3,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.max {
+    max-width: 120rem;
+    margin: auto;
+}
+
+:root {
+    --azulBajito: rgba(108, 164, 255, 0.5);
+    --azulFuerte: rgba(108, 164, 255, 255);
+    --morado: rgba(71, 76, 168, 255);
+    --moradoBajito: rgba(71, 76, 168, 0.5);
+    --gris: rgba(109, 110, 113, 255);
+    --grisBajito: rgba(109, 110, 113, 0.5);
+}
+
+/*Inicio del codigo*/
+
+/*Navegacion*/
+.nav {
+    background-color: var(--azulBajito);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px); /*Linea clave*/
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 768px) {
+    .nav{
+        position: static;
+    }
+}
+
+.nav_left {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    
+    
+}
+
+@media (max-width:830px ) {
+    .nav__left{
+        
+        align-items: flex-start;
+    }
+}
+
+.nav__titulo {
+    color: var(--azulFuerte);
+    text-shadow: 0.1rem 0.1rem 0.3rem black;
+    font-size: 3rem;
+}
+
+.nav_right {
+    display: flex;
+    gap: 3rem;
+}
+
+@media (max-width:830px ) {
+    .nav_right{
+        display: none;
+        
+    }
+}
+
+.nav__enlace {
+    color: var(--gris);
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.nav__enlace:hover {
+    color: var(--morado);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s;
+    
+}
+
+.nav__crear,
+.nav__iniciar {
+    background-color: var(--azulFuerte);
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: .1rem var(--grisBajito) solid;
+}
+.nav__crear:hover,
+.nav__iniciar:hover {
+    color: var(--gris);
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s;
+}
+
+/*Main*/
+
+@media (min-width: 1140px) {
+    .main {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .main{
+        padding-top: 7rem;
+    }
+}
+
+.main__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:480px ) {
+    .main__flex__logo{
+        width: 8rem;
+        height: 8rem;
+
+    }
+}
+
+.mindbot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.maindbot__titulo {
+    font-size: 6.5rem;
+    padding-top: 3rem;
+    color: var(--azulFuerte);
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    
+}
+
+.maindbot__texto {
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 1rem;
+    color: var(--gris);
+}
+
+/*QUE ES UN TRANSTORNO*/
+.main__transtornos {
+    padding-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+    
+}
+
+@media (max-width:768px ) {
+    .main__transtornos{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.main__enlace {
+    color: var(--moradoBajito);
+    text-align: center;
+}
+
+
+.main__enlace:hover {
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s;
+    color: var(--morado);
+}
+
+
+/*CHATBOT*/
+.chatbot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+@media (max-width: 1040px) {
+    .chatbot{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.chatbot__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot__imagen{
+    filter: drop-shadow( var(--gris) 0.2rem 0.2rem 0.5rem);
+}
+
+@media (max-width:768px ) {
+    .chatbot__imagen{
+        width: 30rem;
+    }
+}
+
+/*Transtorno*/
+
+@media (min-width: 1140px) {
+    .transtorno{
+        height: 85vh;
+    }
+}
+
+.transtorno__flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 3rem;
+}
+
+@media (min-width: 1040px) {
+    .transtorno__flex{
+        height: 85vh;
+    }
+    
+}
+
+@media (max-width:1040px ) {
+    .transtorno__flex{
+        flex-direction: column;
+    }
+}
+
+.trastorno__titulo{
+    font-size: 4.8rem;
+    padding-bottom: 1rem;
+    color: var(--morado);
+    font-weight: 700;
+}
+
+@media (max-width:1040px ) {
+    .trastorno__titulo{
+        text-align: center;
+    }
+}
+
+
+.transtorno__texto{
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 1rem 1.5rem;
+}
+
+/*Inician tipos de transtornos*/
+@media (min-width: 1040px) {
+    .transtornos{
+        padding-top: 10rem;
+    }
+    
+}
+
+.transtornos__seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transtorno__caja{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width:1040px ) {
+    .transtorno__caja{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.transtornos__titulo{
+    font-size: 4rem;
+    color: var(--azulFuerte);
+    padding-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+@media (max-width: 1040px) {
+    .transtornos__titulo{
+        text-align: center;
+    }
+}
+.transtornos__texto{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 0 1.5rem;
+}
+
+.transtorno__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1140px ) {
+    .transtorno__img{
+        width: 30rem;
+    }
+}
+
+/*Proposito*/
+@media (min-width: 1040px) {
+    .proposito{
+        height: 100vh;
+        
+        
+    }
+}
+.proposito__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1040px) {
+    .proposito__flex{
+        height: 100vh;
+    }
+}
+.proposito__titulo{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--morado);
+    padding: 1rem 1.5rem;
+}
+
+.proposito__texto{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 1rem 1.5rem;
+}
+@media (max-width:768px ) {
+    .proposito__img{
+        width: 30rem;
+    }
+}
+
+
+/*Footer*/
+
+.footer{
+    position: relative;
+    padding-top: 3rem;
+    height: 100%;
+}
+
+.custom-shape-divider-bottom-1642363165 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.custom-shape-divider-bottom-1642363165 svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 50px;
+    
+}
+
+.custom-shape-divider-bottom-1642363165 .shape-fill {
+    fill: rgba(109, 110, 113, 0.5);
+    
+}
+
+/** For mobile devices **/
+@media (max-width: 1140px) {
+    .custom-shape-divider-bottom-1642363165 svg {
+        width: calc(100% + 1.3px);
+        height: 20px;
+    }
+}
+
+.footer__superior{
+    position: absolute;
+    background-color: rgba(109, 110, 113, 0.664);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+@media (max-width:1040px ) {
+    .footer__superior{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.footer__logo,
+.footer__nosotros,
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.footer__logo{
+    border-right: 0.1rem solid var(--moradoBajito);
+}
+
+@media (max-width:1040px ) {
+    .footer__logo{
+        border-right: none;
+        border-bottom: 0.1rem solid var(--moradoBajito);
+    }
+}
+.footer__nosotros{
+    border-right: 0.1rem solid var(--moradoBajito);
+    padding: 0 2rem;
+}
+
+@media (max-width:1040px ) {
+    .footer__nosotros{
+        border-right: none;
+        border-bottom: 0.1rem solid var(--moradoBajito);
+    }
+}
+
+
+
+
+.footer__titulo{
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.footer__texto{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

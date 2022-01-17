@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS"><!--Palabras clavez-->
+    <meta name="description" content="DESCRIPCION DE LA PAGINA"><!--Pequeña descripcion de la pagina-->
+    <title>Proyecto Modular</title><!--Titulo web-->
+    <link rel="stylesheet" href="/css/normalize.css"><!--Normalize para que se vea igual en todos los navegadores-->
+    <link rel="preload" href="/css/normalize.css" as="style"><!--Prerecargamos Normalize-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style"><!--Prerecargamos nuestro archivo CSS -->
+    <link href="/css/style.css" rel="stylesheet"><!--Agregamos nuestro archivo CSS -->
+    <link rel="shortcut icon" type="image/x-ico" href="ARCHIVO.ico"><!--Agregamos icono a la pestaña web-->
+</head>
+
+<body>
+    <div class="contraseña centrar">
+        <div class="izquierda">
+            <h1 class="izquierda__logo">Test.<span class="izquierda__span">ADS</span></h1>
+        </div>
+
+        <div class="derecha">
+            <form class="formulario" action="">
+
+                <legend class="formulario__legend">
+                    <h2>Introduce y confirma tu nueva contraseña</h2>
+                </legend>
+                <div class="formulario__campo">
+                    <label for="contraseña">Introduce tu nueva contraseña:</label>
+                    <input id="contraseña" class="formulario__campo" type="text" placeholder="Contraseña nueva">
+                </div>
+                <div class="formulario__campo">
+                    <label for="Nuevacontraseña">Confirma tu nueva contraseña:</label>
+                    <input id="Nuevacontraseña" class="formulario__campo" type="text" placeholder="Confirma tu nueva contraseña">
+                </div>
+
+                <a class="boton" href="/principal.html">
+                    <input class="boton_confirmar" type="submit" value="Cambiar contraseña">
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

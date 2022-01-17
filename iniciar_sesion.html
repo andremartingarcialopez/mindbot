@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS">
+    <!--Palabras clavez-->
+    <meta name="description" content="DESCRIPCION DE LA PAGINA">
+    <!--Pequeña descripcion de la pagina-->
+    <title>Proyecto Modular</title>
+    <!--Titulo web-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!--Normalize para que se vea igual en todos los navegadores-->
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <!--Prerecargamos Normalize-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/style.css" as="style">
+    <!--Prerecargamos nuestro archivo CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+    <!--Agregamos nuestro archivo CSS -->
+    <link rel="shortcut icon" type="image/x-ico" href="ARCHIVO.ico">
+    <!--Agregamos icono a la pestaña web-->
+</head>
+
+<body>
+    <div class="iniciar centrar">
+        <div class="izquierda">
+            <h1 class="izquierda__logo">Test.<span class="izquierda__span">ADS</span></h1>
+        </div>
+
+        <div class="derecha">
+            <form class="formulario" action="">
+
+                <legend class="formulario__legend">
+                    <h2>Introduce tus datos para iniciar sesion</h2>
+                </legend>
+                <div class="formulario__campo">
+                    <label for="correo">Correo Electronico:</label>
+                    <input id="correo" class="formulario__campo" type="text" placeholder="Example@correo.com">
+                </div>
+                <div class="formulario__campo">
+                    <label for="contraseña">Contraseña:</label>
+                    <input id="contraseña" class="formulario__campo" type="password" placeholder="Contraseña">
+                </div>
+
+                <a class="boton" href="/principal.html">
+                    <input class="boton_entrar" type="submit" value="ENTRAR">
+                </a>
+            </form>
+
+            <div class="crear">
+                <a class="crear__boton" href="#">Crear una cuenta nueva</a>
+            </div>
+
+            <div class="contraseña">
+                <a class="contraseña__enlace" href="">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
