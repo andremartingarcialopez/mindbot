@@ -325,11 +325,7 @@ a {
     justify-content: center;
     gap: 2rem;
 }
-@media (max-width:830px ) {
-    .transtorno__caja{
-        padding-top: 9rem;
-    }
-}
+
 
 @media (max-width:1040px ) {
     .transtorno__caja{
@@ -343,6 +339,12 @@ a {
     color: var(--azulFuerte);
     padding-bottom: 1.5rem;
     padding: 1rem 1.5rem;
+}
+
+@media (max-width:830px ) {
+    .transtornos__titulo{
+        padding-top: 7rem;
+    }
 }
 @media (max-width: 1040px) {
     .transtornos__titulo{
