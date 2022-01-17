@@ -164,6 +164,12 @@ a {
     justify-content: center;
 }
 
+@media (max-width: 480px) {
+    .mindbot{
+        padding-top: 6.5rem;
+    }
+}
+
 .maindbot__titulo {
     font-size: 6.5rem;
     padding-top: 3rem;
