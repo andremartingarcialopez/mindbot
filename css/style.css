@@ -220,7 +220,8 @@ a {
 .chatbot {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media (max-width: 1040px) {
@@ -256,6 +257,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.chatbot__msj{
+    width: 60rem;
+}
+@media (max-width: 830px) {
+    .chatbot__msj{
+        width: 40rem;
+        padding-bottom: 2rem;
+    }
 }
 
 /*Transtorno*/
