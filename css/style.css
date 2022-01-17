@@ -65,7 +65,7 @@ a {
 
 @media (max-width: 768px) {
     .nav{
-        position: static;
+        position: fixed;
     }
 }
 
