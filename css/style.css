@@ -237,6 +237,12 @@ a {
     }
 }
 
+.chatbot__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Transtorno*/
 
 @media (min-width: 1140px) {
