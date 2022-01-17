@@ -236,6 +236,12 @@ a {
     justify-content: center;
 }
 
+@media (max-width:830px ) {
+    .chatbot__left{
+        display: none;
+    }
+}
+
 .chatbot__imagen{
     filter: drop-shadow( var(--gris) 0.2rem 0.2rem 0.5rem);
 }
