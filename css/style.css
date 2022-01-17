@@ -156,9 +156,7 @@ a {
 }
 @media (max-width:480px ) {
     .main__flex__logo{
-        width: 8rem;
-        height: 8rem;
-
+        display: none;
     }
 }
 
