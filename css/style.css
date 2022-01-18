@@ -564,3 +564,12 @@ a {
     text-align: center;
     color: var(--gris);
 }
+
+@media (max-width: 480px) {
+    .footer__derechos{
+        border-top: solid .1rem var(--grisBajito);
+        padding: 1rem;
+    }
+    
+}
+
