@@ -545,6 +545,11 @@ a {
     flex-direction: row;
     gap: 15rem;
 }
+@media (max-width:480px ) {
+    .footer__terminos{
+        gap: 3rem;
+    }
+}
 .footer__titulo {
     letter-spacing: 0.5rem;
     font-weight: 700;
