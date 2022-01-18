@@ -565,7 +565,7 @@ a {
     color: var(--gris);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
     .footer__derechos{
         border-top: solid .1rem var(--grisBajito);
         padding: 1rem;
