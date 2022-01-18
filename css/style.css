@@ -482,6 +482,11 @@ a {
     justify-content: center;
     padding: .5rem 0;
 }
+@media (max-width: 480px) {
+    .footer__superior{
+        width: 101%;
+    }
+}
 
 @media (max-width:1040px ) {
     .footer__superior{
