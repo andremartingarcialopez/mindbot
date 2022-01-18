@@ -275,7 +275,7 @@ a {
 }
 @media (max-width: 830px) {
     .chatbot__msj{
-        width: 40rem;
+        width: 38rem;
     }
 }
 
@@ -439,6 +439,7 @@ a {
     position: relative;
     padding-top: 3rem;
     height: 100%;
+    width: 100%;
 }
 
 .custom-shape-divider-bottom-1642363165 {
@@ -474,6 +475,7 @@ a {
 
 .footer__superior{
     position: absolute;
+    
     background-color: rgba(109, 110, 113, 0.664);
     width: 100%;
     display: grid;
@@ -482,11 +484,7 @@ a {
     justify-content: center;
     padding: .5rem 0;
 }
-@media (max-width: 480px) {
-    .footer__superior{
-        width: 101%;
-    }
-}
+
 
 @media (max-width:1040px ) {
     .footer__superior{
