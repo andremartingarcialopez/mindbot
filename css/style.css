@@ -19,8 +19,8 @@ html {
 body {
     font-size: 16px;
     font-family: "Baloo 2", cursive;
-    background: rgb(109,110,113);
-    background: linear-gradient(0deg, rgba(109,110,113,0.4009978991596639) 40%, rgba(109,110,113,0.14049369747899154) 54%);
+    background: rgb(219,223,233);
+background: linear-gradient(0deg, rgba(219,223,233,0.6250875350140056) 40%, rgba(255,255,255,1) 50%);
     
 }
 
@@ -461,7 +461,7 @@ a {
 }
 
 .custom-shape-divider-bottom-1642363165 .shape-fill {
-    fill: rgba(109, 110, 113, 0.5);
+    fill: rgba(255, 255, 255, 0.664);
     
 }
 
@@ -476,7 +476,7 @@ a {
 .footer__superior{
     position: absolute;
     
-    background-color: rgba(109, 110, 113, 0.664);
+    background-color: rgba(255, 255, 255, 0.664);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
