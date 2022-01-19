@@ -350,6 +350,12 @@ a {
     padding: 1rem 1.5rem;
 }
 
+@media (min-width: 1140px) {
+    .transtornos__titulo{
+        padding-top: 7rem;
+    }
+}
+
 @media (max-width: 830px) {
     .transtornos__titulo {
         padding-top: 7rem;
