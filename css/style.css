@@ -631,9 +631,16 @@ a {
     width: 25rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 830px) {
     .left__img{
         width: 20rem;
+        padding-top: 15rem;
+    }
+}
+
+@media (max-width: 480px ) {
+    .left__img{
+        padding: 0;
     }
 }
 
