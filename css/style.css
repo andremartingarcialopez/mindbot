@@ -419,11 +419,14 @@ a {
     line-height: 1.5;
     padding: 1rem 1.5rem;
 }
+
 @media (max-width: 768px) {
     .proposito__img {
-        width: 30rem;
+        width: 5rem;
     }
 }
+
+
 
 /*Footer*/
 
