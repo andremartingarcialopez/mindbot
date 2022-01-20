@@ -383,8 +383,8 @@ a {
 
 @media (max-width: 840px) {
     .transtorno__img {
-        width: 100vw;
-        height: 100%;
+        width: 90vw;
+        height: 90%;
     
     }
 }
