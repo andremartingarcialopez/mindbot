@@ -298,6 +298,7 @@ a {
     padding-bottom: 1rem;
     color: var(--morado);
     font-weight: 700;
+    padding-top: 4rem;
 }
 
 @media (max-width: 1040px) {
@@ -378,9 +379,19 @@ a {
     align-items: center;
 }
 
-@media (max-width: 1140px) {
+
+
+@media (max-width: 840px) {
     .transtorno__img {
-        width: 30rem;
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media (min-width:768px ) {
+    .transtorno__img{
+        width: 55rem;
+        height: 55rem;
     }
 }
 
