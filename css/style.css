@@ -420,13 +420,17 @@ a {
     padding: 1rem 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .proposito__img {
-        width: 5rem;
-    }
+.proposito__img {
+    width: 70rem; 
+    height: 70rem;
 }
 
-
+@media (max-width: 480px ) {
+    .proposito__img{
+        width: 40rem;
+        height: 40rem;
+    }
+}
 
 /*Footer*/
 
@@ -582,30 +586,29 @@ a {
 }
 
 /*Iniciar sesion*/
-.back{
+.back {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     width: 100%;
-
 }
 
-.back__{
+.back__ {
     width: 100%;
 }
 
-.back__enlace{
+.back__enlace {
     color: var(--gris);
     font-size: 2rem;
 }
-@media (max-width:840px ) {
-    .back__enlace{
+@media (max-width: 840px) {
+    .back__enlace {
         padding-left: 3rem;
     }
 }
 
-.back__enlace:hover{
+.back__enlace:hover {
     color: var(--azulFuerte);
 }
 
@@ -618,8 +621,8 @@ a {
     gap: 5rem;
 }
 
-@media (max-width:840px ) {
-    .flex{
+@media (max-width: 840px) {
+    .flex {
         flex-direction: column;
     }
 }
@@ -635,14 +638,14 @@ a {
 }
 
 @media (max-width: 840px) {
-    .left__img{
+    .left__img {
         width: 20rem;
         padding-top: 25rem;
     }
 }
 
-@media (max-width: 480px ) {
-    .left__img{
+@media (max-width: 480px) {
+    .left__img {
         padding: 0;
     }
 }
@@ -653,8 +656,8 @@ a {
     text-shadow: 0.1rem 0.1rem 0.5rem black;
 }
 
-@media (max-width:840px ) {
-    .left__title{
+@media (max-width: 840px) {
+    .left__title {
         display: none;
     }
 }
@@ -667,8 +670,8 @@ a {
     text-align: center;
 }
 
-@media (max-width:480px ) {
-    .right__iniciar{
+@media (max-width: 480px) {
+    .right__iniciar {
         padding: 0 1rem;
     }
 }
@@ -681,7 +684,7 @@ a {
     font-size: 2rem;
 }
 
-.formulario__titulo{
+.formulario__titulo {
     letter-spacing: 0.5rem;
     color: var(--gris);
 }
@@ -710,7 +713,6 @@ a {
     border: 0.1rem solid var(--azulFuerte);
 }
 
-
 .boton {
     padding: 1.5rem 0;
 }
@@ -730,5 +732,3 @@ a {
     background-color: var(--morado);
     transition: 0.5s;
 }
-
-
