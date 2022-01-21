@@ -397,6 +397,14 @@ a {
     align-items: center;
 }
 
+.transtornos__img{
+    width: 40rem;
+}
+
+.transtornos__img__walk{
+    height: 44rem;
+}
+
 @media (max-width: 480px) {
     .transtornos__img{
         width: 35rem;
@@ -448,8 +456,8 @@ a {
 
 @media (max-width: 480px) {
     .proposito__img {
-        width: 40rem;
-        height: 40rem;
+        width: 35rem;
+        height: 35rem;
     }
 }
 
