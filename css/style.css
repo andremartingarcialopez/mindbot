@@ -403,11 +403,13 @@ a {
 
 .transtornos__img__walk{
     height: 44rem;
+    width: 44rem;
 }
 
 @media (max-width: 480px) {
     .transtornos__img{
-        height: 44rem;
+        width: 35rem;
+        height: 35rem;
     }
 }
 
