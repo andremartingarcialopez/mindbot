@@ -276,6 +276,7 @@ a {
 
 .transtorno__flex {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     column-gap: 3rem;
@@ -283,17 +284,15 @@ a {
 
 @media (min-width: 1040px) {
     .transtorno__flex {
-        height: 85vh;
+        height: 90vh;
     }
 }
 
-@media (max-width: 1040px) {
+/*@media (max-width: 1040px) {
     .transtorno__flex {
         flex-direction: column;
     }
-}
-
-
+}*/
 
 .trastorno__titulo {
     font-size: 4.8rem;
@@ -303,11 +302,9 @@ a {
     padding-top: 4rem;
 }
 
-@media (max-width: 1040px) {
-    .trastorno__titulo {
-        text-align: center;
-        padding-top: 7rem;
-    }
+.trastorno__titulo {
+    text-align: center;
+    padding-top: 7rem;
 }
 
 .transtorno__texto {
@@ -316,7 +313,18 @@ a {
     padding: 1rem 1.5rem;
 }
 
-/*Inician tipos de transtornos*/
+.transtorno__img {
+    width: 55rem;
+    
+}
+
+@media (max-width:480px ) {
+    .transtorno__img{
+        width: 35rem;
+    }
+}
+
+/*INICIA SECCION DE TIPOS DE TRANSTORNOS*/
 @media (min-width: 1040px) {
     .transtornos {
         padding-top: 10rem;
@@ -331,7 +339,7 @@ a {
     justify-content: space-between;
 }
 
-.transtorno__caja {
+.transtornos__contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -340,7 +348,7 @@ a {
 }
 
 @media (max-width: 1040px) {
-    .transtorno__caja {
+    .transtornos__contenedor {
         display: flex;
         flex-direction: column;
     }
@@ -375,27 +383,10 @@ a {
     padding: 0 1.5rem;
 }
 
-.transtorno__right {
+.transtornos__right {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-@media (max-width: 840px) {
-    .transtorno__img {
-        width: 90vw;
-        height: 90%;
-    
-    }
-}
-
-@media (min-width:768px ) {
-    .transtorno__img{
-        width: 55rem;
-        height: 55rem;
-    }
 }
 
 /*Proposito*/
@@ -435,12 +426,12 @@ a {
 }
 
 .proposito__img {
-    width: 70rem; 
+    width: 70rem;
     height: 70rem;
 }
 
-@media (max-width: 480px ) {
-    .proposito__img{
+@media (max-width: 480px) {
+    .proposito__img {
         width: 40rem;
         height: 40rem;
     }
