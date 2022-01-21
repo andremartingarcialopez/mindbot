@@ -295,11 +295,11 @@ a {
     }
 }
 
-@media (max-width: 1040px) {
+/*@media (max-width: 1040px) {
     .transtorno__flex {
         flex-direction: column;
     }
-}
+}*/
 
 .trastorno__titulo {
     font-size: 4.8rem;
@@ -395,6 +395,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 480px) {
+    .transtornos__img{
+        width: 30rem;
+    }
 }
 
 
