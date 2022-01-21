@@ -220,6 +220,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
+    
 }
 
 @media (max-width: 1040px) {
@@ -252,6 +253,12 @@ a {
 }
 
 .chatbot__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbot__chat{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,6 +366,7 @@ a {
     color: var(--azulFuerte);
     padding-bottom: 1.5rem;
     padding: 1rem 1.5rem;
+    
 }
 
 @media (min-width: 1140px) {
@@ -380,7 +388,7 @@ a {
 .transtornos__texto {
     font-size: 1.8rem;
     line-height: 1.5;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .transtornos__right {
@@ -388,6 +396,8 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
 
 /*Proposito*/
 @media (min-width: 1040px) {
