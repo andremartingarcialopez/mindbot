@@ -19,6 +19,9 @@ body {
     font-family: "Baloo 2", cursive;
     background: rgb(219, 223, 233);
     background: linear-gradient(0deg, rgba(219, 223, 233, 0.6250875350140056) 40%, rgba(255, 255, 255, 1) 50%);
+    overflow-x: hidden;
+    
+
 }
 
 h1,
@@ -137,10 +140,13 @@ a {
 }
 
 /*Main*/
+.main{
+    overflow: hidden;
+}
 
 @media (min-width: 1140px) {
     .main {
-        height: 130vh;
+        height: 50vh;
     }
 }
 
@@ -215,6 +221,8 @@ a {
 }
 
 /*CHATBOT*/
+
+
 .chatbot {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -277,7 +285,7 @@ a {
 
 @media (min-width: 1140px) {
     .transtorno {
-        height: 85vh;
+        height: 100vh;
     }
 }
 
@@ -287,11 +295,12 @@ a {
     align-items: center;
     justify-content: space-between;
     column-gap: 3rem;
+    overflow: hidden;
 }
 
 @media (min-width: 1040px) {
     .transtorno__flex {
-        height: 90vh;
+        height: 100vh;
     }
 }
 
@@ -352,6 +361,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    overflow: hidden;
 }
 
 @media (max-width: 1040px) {
@@ -416,6 +426,10 @@ a {
 
 
 /*Proposito*/
+
+.proposito{
+    overflow: hidden;
+}
 @media (min-width: 1040px) {
     .proposito {
         height: 100vh;
