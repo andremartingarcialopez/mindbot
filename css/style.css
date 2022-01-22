@@ -330,7 +330,7 @@ a {
 }
 
 .transtorno__img {
-    width: 55rem;
+    width: 50rem;
     
 }
 
@@ -466,8 +466,8 @@ a {
 }
 
 .proposito__img {
-    width: 55rem;
-    height: 55rem;
+    width: 50rem;
+    height: 50rem;
 }
 
 @media (max-width: 480px) {
