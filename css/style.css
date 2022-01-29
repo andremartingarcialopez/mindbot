@@ -199,14 +199,16 @@ a {
 .main__transtornos {
     padding-top: 2rem;
     display: flex;
-    gap: 3rem;
+    width: 100%;
+    justify-content: space-around;
     font-size: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
     .main__transtornos {
         flex-direction: column;
         text-align: center;
+        gap: 3rem;
     }
 }
 .main__enlace {
@@ -341,11 +343,7 @@ a {
 }
 
 /*INICIA SECCION DE TIPOS DE TRANSTORNOS*/
-@media (min-width: 1040px) {
-    .transtornos {
-        padding-top: 10rem;
-    }
-}
+
 
 .transtornos__seccion {
     display: flex;
@@ -353,6 +351,14 @@ a {
     gap: 3rem;
     align-items: center;
     justify-content: space-between;
+}
+.transtornos__tipo__titulo{
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 4.8rem;
+    padding-bottom: 1rem;
+    color: var(--morado);
+    font-weight: 700;
 }
 
 .transtornos__contenedor {
@@ -362,6 +368,11 @@ a {
     justify-content: center;
     gap: 2rem;
     overflow: hidden;
+}
+@media (min-width: 1140px) {
+    .transtornos__contenedor{
+        height: 70vh;
+    }
 }
 
 @media (max-width: 1040px) {
