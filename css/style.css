@@ -364,10 +364,18 @@ a {
     overflow: hidden;
 }
 
+
+
 @media (max-width: 1040px) {
     .transtornos__contenedor {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (min-width: 1140px) {
+    .transtornos__contenedor{
+        height: 100vh;
     }
 }
 
