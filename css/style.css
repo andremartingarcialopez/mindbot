@@ -316,6 +316,7 @@ a {
     color: var(--morado);
     font-weight: 700;
     padding-top: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
 }
 
 .trastorno__titulo {
@@ -384,6 +385,7 @@ a {
     color: var(--azulFuerte);
     padding-bottom: 1.5rem;
     padding: 1rem 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--grisBajito);
     
 }
 
@@ -459,6 +461,7 @@ a {
     padding-bottom: 2rem;
     color: var(--morado);
     padding-top: 10rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
 }
 
 @media (max-width: 840px) {
