@@ -844,6 +844,17 @@ a {
 	align-items: center;
 }
 
+.contacto__bloque-1 img {
+	width: 49rem;
+	align-items: center;
+}
+
+@media (max-width:600px ) {
+	.contacto__bloque-1 img{
+		width: 370px;
+	}
+}
+
 .contacto__bloque-2{
 	align-items: center;
 	padding-top: 3rem;
@@ -863,4 +874,16 @@ a {
     line-height: 1.5;
     padding: 1rem 1.5rem;
 }
+
+article h2{
+	font-size: 4.8rem;
+    padding-bottom: 1rem;
+    color: var(--morado);
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+    text-align: center;
+}
+
+
+
 
