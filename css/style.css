@@ -520,7 +520,7 @@ a {
 }
 
 .icon-user-boton:hover{
-	color: rgb(0, 0, 0);
+	color: var(--moradoBajito);
 }
 
 /*Footer*/
