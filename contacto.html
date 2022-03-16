@@ -2,25 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS"> <!--Palabras clavez-->
-    <meta name="description" content="DESCRIPCION DE LA PAGINA"><!--Pequeña descripcion de la pagina-->
-    <title>Curso Coffee HOT</title><!--Titulo web-->
-    <link rel="stylesheet" href="/css/normalize.css"><!--Normalize para que se vea igual en todos los navegadores-->
-    <link rel="preload" href="/css/normalize.css" as="style"><!--Prerecargamos Normalize-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fuentes de google-->
-    <link rel="preload" href="/css/style.css" as="style"><!--Prerecargamos nuestro archivo CSS -->
-    <link href="/css/style.css" rel="stylesheet"><!--Agregamos nuestro archivo CSS -->
-    <link rel="shortcut icon" type="image/x-ico" href="ARCHIVO.ico"><!--Agregamos icono a la pestaña web-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Color web-->
+    <meta name="theme-color" content="#6ca4ff" />
+    <!--Palabras claves-->
+    <meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS" />
+    <!--Descripcion-->
+    <meta name="description" content="DESCRIPCION DE LA PAGINA" />
+    <title>MindBot</title>
+    <!--Normalize-->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preload" href="/css/normalize.css" as="style" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!--Hoja de estilos-->
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <!--CSS animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Logo pestaña web-->
+    <link rel="shortcut icon" type="image/x-ico" href="/img/Logo - copia.ico" />
+    <!--Animaciones SVG-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!--Animaciones de entradas-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Animaciones de entrada-->
+    <!-- Iconos Fontello-->
+    <link rel="stylesheet" href="/fontello-0dca2786/css/fontello.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/scripts.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="">Atras</a>
+    <header class="back">
+        <div class="max back__">
+            <a class="back__enlace" href="#"> ← Regresar</a>
+        </div>
     </header>
+
+    <main>
+        <div>
+            <h1>Ponte en contacto con una profesional</h1>
+        </div>
+
+        <div class="contcato__bloque">
+
+            <div class="contacto__bloque-1">
+                <img src="/img/Copia de Diseño sin nombre.png" width="400px" alt="">
+                <p>Psicologa Areli</p>
+            </div>
+
+            <div>
+                <h2>¿Quien soy?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eligendi quisquam sunt doloribus vel in, molestias debitis sequi officia animi fugiat totam ipsam iusto, magnam voluptatum doloremque omnis. Sapiente, beatae?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eligendi quisquam sunt doloribus vel in, molestias debitis sequi officia animi fugiat totam ipsam iusto, magnam voluptatum doloremque omnis. Sapiente, beatae?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eligendi quisquam sunt doloribus vel in, molestias debitis sequi officia animi fugiat totam ipsam iusto, magnam voluptatum doloremque omnis. Sapiente, beatae?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eligendi quisquam sunt doloribus vel in, molestias debitis sequi officia animi fugiat totam ipsam iusto, magnam voluptatum doloremque omnis. Sapiente, beatae?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse eligendi quisquam sunt doloribus vel in, molestias debitis sequi officia animi fugiat totam ipsam iusto, magnam voluptatum doloremque omnis. Sapiente, beatae?
+                </p>
+            </div>
+        </div>
+
+        <article>
+            <div class="mediosContacto">
+                <div class="contacto__telefono">
+                    <i title="Telefono" class="icon-phone-boton icon-phone"></i></i>
+                    <a target="_blank" href="tel:+523312439145"> 3312439145 </a>
+                </div>
+
+                <div class="contacto__correo">
+                    <i title="Correo Electronico" class="icon-mail-boton icon-mail"></i></i>
+                    <a target="_blank" href="mailto:alunnapsicologia@gmail.com"> alunnapsicologia@gmail.com </a>
+                </div>
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>
