@@ -1,297 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Color web-->
+		<meta name="theme-color" content="#6ca4ff" />
+		<!--Palabras claves-->
+		<meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS" />
+		<!--Descripcion-->
+		<meta name="description" content="DESCRIPCION DE LA PAGINA" />
+		<title>MindBot</title>
+		<!--Normalize-->
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="preload" href="/css/normalize.css" as="style" />
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Hoja de estilos-->
+		<link rel="preload" href="/css/style.css" as="style" />
+		<link href="/css/style.css" rel="stylesheet" />
+		<!--CSS animacion-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<!--Logo pestaña web-->
+		<link rel="shortcut icon" type="image/x-ico" href="/img/Logo - copia.ico" />
+		<!--Animaciones SVG-->
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!--Animaciones de entradas-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!--Animaciones de entrada-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="/js/scripts.js"></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Color web-->
-    <meta name="theme-color" content="#6ca4ff">
-    <!--Palabras claves-->
-    <meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS">
-    <!--Descripcion-->
-    <meta name="description" content="DESCRIPCION DE LA PAGINA">
-    <title>MindBot</title>
-    <!--Normalize-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="preload" href="/css/normalize.css" as="style">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--Hoja de estilos-->
-    <link rel="preload" href="/css/style.css" as="style">
-    <link href="/css/style.css" rel="stylesheet">
-    <!--CSS animacion-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!--Logo pestaña web-->
-    <link rel="shortcut icon" type="image/x-ico" href="/img/Logo - copia.ico">
-    <!--Animaciones SVG-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!--Animaciones de entradas-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--Animaciones de entrada-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/js/scripts.js"></script>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="nav__left">
+					<a class="nav__left__enlace" href="#">
+						<img class="nav__logo" src="/img/Logo.png" width="60px" alt="" />
+						<h2 class="nav__titulo">MindBot</h2>
+					</a>
+				</div>
 
-</head>
+				<div class="nav_right">
+					<a class="nav__enlace" href="#">MindBot</a>
+					<a class="nav__enlace" href="#trastorno">Trastorno Psicologico</a>
+					<a class="nav__enlace" href="#trastornos"
+						>Tipos de Trastornos Psicologicos</a
+					>
+					<a class="nav__enlace" href="#proposito">Proposito</a>
+					<a class="nav__crear" href="/crear_cuenta.html">Crear Cuenta</a>
+					<a class="nav__iniciar" href="/iniciar_sesion.html">Iniciar Sesion</a>
+				</div>
+			</nav>
+		</header>
+		<!--Termina el header-->
 
-<body>
-    <header>
-        <nav class="nav">
-            <div class="nav__left">
-                <a class="nav__left__enlace" href="#">
-                    <img class="nav__logo" src="/img/Logo.png" width="60px" alt="">
-                    <h2 class="nav__titulo">MindBot</h2>
-                </a>
-            </div>
+		<!--Inicia el main-->
+		<main id="main" class="main">
+			<div data-aos="fade-right" data-aos-duration="2000" class="mindbot max">
+				<div class="main__flex">
+					<img
+						class="main__flex__logo"
+						src="/img/Logo.png"
+						width="100"
+						alt=""
+					/>
+					<h1 class="maindbot__titulo">MindBot</h1>
+				</div>
+				<p class="maindbot__texto">
+					MindBot es un citio web en el cual cualquier usuario tiene la
+					posibilidad de relizar un test psciologico mediante "MindBot" un
+					chatbot que nos dira al terminar el test un resultado en forma de
+					prediccon si sufrimos alguno de los trastornos que tomamos en cuenta
+					en la pagina los caules son:
+				</p>
+				<div class="main__trastornos">
+					<a class="main__enlace" href="#ansiedad">Trastorno de Ansiedad</a>
+					<a class="main__enlace" href="#depresion">Trastorno de Depresion</a>
+					<a class="main__enlace" href="#atencion"
+						>Trastorno por deficit de atencion e <br />
+						hiperactividad</a
+					>
+				</div>
+			</div>
+		</main>
 
-            <div class="nav_right">
-                <a class="nav__enlace" href="#">MindBot</a>
-                <a class="nav__enlace" href="#transtorno">Transtorno Psicologico</a>
-                <a class="nav__enlace" href="#transtornos">Tipos de Transtornos Psicologicos</a>
-                <a class="nav__enlace" href="#proposito">Proposito</a>
-                <a class="nav__crear" href="/crear_cuenta.html">Crear Cuenta</a>
-                <a class="nav__iniciar" href="/iniciar_sesion.html">Iniciar Sesion</a>
-            </div>
+		<!--Seccion de CHATBOT-->
+		<section class="chatbot__section">
+			<div class="chatbot max">
+				<div class="chatbot__left">
+					<img
+						class="chatbot__imagen animate__animated animate__pulse animate__infinite animate__slower"
+						src="/img/png_20220115_133732_0000.png"
+						width="500"
+						alt=""
+					/>
+				</div>
 
-        </nav>
-    </header>
-    <!--Termina el header-->
+				<div class="chatbot__right">
+					<div class="chatbot__chat">
+						<!--AQUI VA EL CHATBOT-->
+						<img
+							class="chatbot__msj"
+							src="/img/Copia de Diseño sin nombre.png"
+							width="500"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!--Inicia el main-->
-    <main id="main" class="main">
-        <div data-aos="fade-right" data-aos-duration="2000" class="mindbot max">
-            <div class="main__flex">
-                <img class="main__flex__logo" src="/img/Logo.png" width="100" alt="">
-                <h1 class="maindbot__titulo"> MindBot</h1>
-            </div>
-            <P class="maindbot__texto">MindBot MindBot es un citio web en el cual cualquier usuario tiene la posibilidad de
-                relizar un test psciologico mediante "MindBot" un chatbot que nos dira al terminar el test
-                un resultado en forma de prediccon si sufrimos alguno de los transtornos que tomamos en cuenta en la
-                pagina los caules son:
-            </P>
-            <div class="main__transtornos">
-                <a class="main__enlace" href="#ansiedad">Transtorno de Ansiedad</a>
-                <a class="main__enlace" href="#depresion">Transtorno de Depresion</a>
-                <a class="main__enlace" href="#atencion">Transtorno por deficit de atencion e <br> hiperactividad</a>
-            </div>
-        </div>
-    </main>
+		<!--HASTA AQUI.................................................................-->
 
-    <!--Seccion de CHATBOT-->
-    <section class="chatbot__section">
-        <div class="chatbot max">
-            <div class="chatbot__left">
-                <img class="chatbot__imagen animate__animated animate__pulse animate__infinite animate__slower"
-                    src="/img/png_20220115_133732_0000.png" width="500" alt="">
-            </div>
+		<section id="trastorno" class="trastorno">
+			<div class="trastorno__flex max">
+				<div
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					class="trastorno__left"
+				>
+					<h2 class="trastorno__titulo">QUE ES UN TRASTORNO PSICOLOGICO</h2>
+					<p class="trastorno__texto">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+						officiis blanditiis totam soluta ducimus laborum quo placeat quos
+						nam mollitia. Sunt quidem velit delectus exercitationem doloremque
+						ut consectetur numquam, fugiat cumque maxime nemo. Quidem repellat
+						tempora sapiente molestiae non maxime perspiciatis quibusdam sequi
+						deserunt consectetur, inventore mollitia voluptas? Accusantium
+						eveniet reprehenderit inventore enim doloremque quae adipisci eum
+						veniam temporibus molestias tempore praesentium architecto qui a
+						dicta ab, officiis nulla. Illo sint vitae odio voluptas quibusdam
+						earum ratione molestias, nihil soluta quaerat commodi similique
+						fugiat officiis mollitia magnam deserunt enim officia natus tempora
+						consequatur optio error nisi ad ullam. Consequatur, dignissimos.
+					</p>
+				</div>
 
-            <div class="chatbot__right">
-                <div class="chatbot__chat">
-                    <!--AQUI VA EL CHATBOT-->
-                    <img class="chatbot__msj" src="/img/Copia de Diseño sin nombre.png" width="500" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+				<div
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					class="trastorno__right"
+				>
+					<lottie-player
+						class="trastorno__img"
+						src="/json/83054-neurologist.json"
+						background="transparent"
+						speed="1.5"
+						loop
+						autoplay
+					></lottie-player>
+					<!--AQUI VA UNA IMAGEN/ANIMACION SVG-->
+				</div>
+			</div>
+		</section>
 
-    <!--HASTA AQUI.................................................................-->
+		<!--Seccion de tipos de trastornos-->
+		<section class="max trastornos">
+			<div id="trastornos" class="trastornos__seccion">
+				<!--Inicia tipo de transtrono contenedor-->
+				<h2
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					class="trastorno__titulo"
+				>
+					Tipos de Trastornos Psicologicos
+				</h2>
+				<div id="ansiedad" class="trastornos__contenedor">
+					<div
+						data-aos="fade-left"
+						data-aos-duration="2000"
+						class="trastornos__left"
+					>
+						<h2 class="trastornos__titulo">TRASTORNO DE ANSIEDAD</h2>
+						<p class="trastornos__texto">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+							voluptates commodi eos, fugiat porro reprehenderit. Aliquam
+							praesentium impedit voluptatem illo sint modi voluptatum aliquid
+							vero, ut corporis? Esse velit itaque, reprehenderit similique odio
+							ex provident minima et facilis aperiam error atque harum aliquam
+							adipisci quod quasi ratione, inventore ducimus saepe similique
+							sed. Similique in alias quos fugiat quis dicta consequatur dolorem
+							eaque exercitationem odio provident illo nulla rem odit, beatae
+							ipsa tempora, est ducimus. Nemo ratione repellat aperiam voluptas
+							maiores reiciendis quasi? Molestias voluptates qui fugiat optio
+							itaque perferendis eaque, porro ratione iusto ipsam quae
+							voluptatibus?
+						</p>
+					</div>
 
-    <section id="transtorno" class="transtorno">
-        <div class="transtorno__flex max">
-            <div data-aos="fade-up" data-aos-duration="2000" class="transtorno__left">
-                <h2 class="trastorno__titulo">QUE ES UN TRANSTORNO PSICOLOGICO</h2>
-                <P class="transtorno__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-                    officiis blanditiis totam soluta
-                    ducimus laborum quo placeat quos nam mollitia. Sunt quidem velit delectus exercitationem doloremque
-                    ut
-                    consectetur numquam, fugiat cumque maxime nemo. Quidem repellat tempora sapiente molestiae non
-                    maxime
-                    perspiciatis quibusdam sequi deserunt consectetur, inventore mollitia voluptas? Accusantium eveniet
-                    reprehenderit inventore enim doloremque quae adipisci eum veniam temporibus molestias tempore
-                    praesentium architecto qui a dicta ab, officiis nulla. Illo sint vitae odio voluptas quibusdam earum
-                    ratione molestias, nihil soluta quaerat commodi similique fugiat officiis mollitia magnam deserunt
-                    enim
-                    officia natus tempora consequatur optio error nisi ad ullam. Consequatur, dignissimos.
-                </P>
-            </div>
+					<div
+						data-aos="fade-left"
+						data-aos-duration="2000"
+						class="trastornos__right"
+					>
+						<lottie-player
+							class="trastornos__img"
+							src="https://assets1.lottiefiles.com/packages/lf20_tijmpky4.json"
+							background="transparent"
+							speed="2"
+							loop
+							autoplay
+						></lottie-player>
+					</div>
+				</div>
+				<!--Fin de transtrono__caja-->
 
-            <div data-aos="fade-up" data-aos-duration="2000" class="transtorno__right">
-                <lottie-player class="transtorno__img" src="/json/83054-neurologist.json" background="transparent"
-                    speed="1.5" loop autoplay></lottie-player>
-                <!--AQUI VA UNA IMAGEN/ANIMACION SVG-->
-            </div>
-        </div>
-    </section>
+				<div id="depresion" class="trastornos__contenedor">
+					<div
+						data-aos="fade-right"
+						data-aos-duration="2000"
+						class="trastornos__left"
+					>
+						<h2 class="trastornos__titulo">TRASTORNO DE DEPRESION</h2>
+						<p class="trastornos__texto">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+							voluptates commodi eos, fugiat porro reprehenderit. Aliquam
+							praesentium impedit voluptatem illo sint modi voluptatum aliquid
+							vero, ut corporis? Esse velit itaque, reprehenderit similique odio
+							ex provident minima et facilis aperiam error atque harum aliquam
+							adipisci quod quasi ratione, inventore ducimus saepe similique
+							sed. Similique in alias quos fugiat quis dicta consequatur dolorem
+							eaque exercitationem odio provident illo nulla rem odit, beatae
+							ipsa tempora, est ducimus. Nemo ratione repellat aperiam voluptas
+							maiores reiciendis quasi? Molestias voluptates qui fugiat optio
+							itaque perferendis eaque, porro ratione iusto ipsam quae
+							voluptatibus?
+						</p>
+					</div>
 
-    <!--Seccion de tipos de transtornos-->
-    <section class="max transtornos">
-        <div id="transtornos" class="transtornos__seccion">
-            <!--Inicia tipo de transtrono contenedor-->
-            <h2 data-aos="fade-up" data-aos-duration="2000" class="trastorno__titulo"> Tipos de Transtornos Psicologicos</h2>
-            <div id="ansiedad" class="transtornos__contenedor">
-                <div data-aos="fade-left" data-aos-duration="2000" class="transtornos__left">
-                    <h2 class="transtornos__titulo">TRANSTORNO DE ANSIEDAD</h2>
-                    <p class="transtornos__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                        voluptates
-                        commodi eos, fugiat porro reprehenderit. Aliquam praesentium impedit voluptatem illo sint modi
-                        voluptatum aliquid vero, ut corporis? Esse velit itaque, reprehenderit similique odio ex
-                        provident
-                        minima et facilis aperiam error atque harum aliquam adipisci quod quasi ratione, inventore
-                        ducimus
-                        saepe similique sed. Similique in alias quos fugiat quis dicta consequatur dolorem eaque
-                        exercitationem
-                        odio provident illo nulla rem odit, beatae ipsa tempora, est ducimus. Nemo ratione repellat
-                        aperiam
-                        voluptas maiores reiciendis quasi? Molestias voluptates qui fugiat optio itaque perferendis
-                        eaque,
-                        porro
-                        ratione iusto ipsam quae voluptatibus?
-                    </p>
-                </div>
+					<div
+						data-aos="fade-right"
+						data-aos-duration="2000"
+						class="trastornos__right"
+					>
+						<lottie-player
+							class="trastornos__img trastornos__img__walk"
+							src="/json/91726-sad-guy-is-walking.json"
+							background="transparent"
+							speed="1"
+							loop
+							autoplay
+						>
+						</lottie-player>
+					</div>
+				</div>
+				<!--Fin de transtrono__caja-->
 
-                <div data-aos="fade-left" data-aos-duration="2000" class="transtornos__right">
-                    <lottie-player class="transtornos__img"
-                        src="https://assets1.lottiefiles.com/packages/lf20_tijmpky4.json" background="transparent"
-                        speed="2" loop autoplay></lottie-player>
-                </div>
-            </div>
-            <!--Fin de transtrono__caja-->
+				<div id="atencion" class="trastornos__contenedor">
+					<div
+						data-aos="fade-left"
+						data-aos-duration="2000"
+						class="trastornos__left"
+					>
+						<h2 class="trastornos__titulo">
+							TRASTORNO POR DEFICIT DE ATENCION E HIPERACTIVIDAD
+						</h2>
+						<p class="trastornos__texto">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+							voluptates commodi eos, fugiat porro reprehenderit. Aliquam
+							praesentium impedit voluptatem illo sint modi voluptatum aliquid
+							vero, ut corporis? Esse velit itaque, reprehenderit similique odio
+							ex provident minima et facilis aperiam error atque harum aliquam
+							adipisci quod quasi ratione, inventore ducimus saepe similique
+							sed. Similique in alias quos fugiat quis dicta consequatur dolorem
+							eaque exercitationem odio provident illo nulla rem odit, beatae
+							ipsa tempora, est ducimus. Nemo ratione repellat aperiam voluptas
+							maiores reiciendis quasi? Molestias voluptates qui fugiat optio
+							itaque perferendis eaque, porro ratione iusto ipsam quae
+							voluptatibus?
+						</p>
+					</div>
 
-            <div id="depresion" class="transtornos__contenedor">
-                <div data-aos="fade-right" data-aos-duration="2000" class="transtornos__left">
-                    <h2 class="transtornos__titulo">TRANSTORNO DE DEPRESION</h2>
-                    <p class="transtornos__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                        voluptates
-                        commodi eos, fugiat porro reprehenderit. Aliquam praesentium impedit voluptatem illo sint modi
-                        voluptatum aliquid vero, ut corporis? Esse velit itaque, reprehenderit similique odio ex
-                        provident
-                        minima et facilis aperiam error atque harum aliquam adipisci quod quasi ratione, inventore
-                        ducimus
-                        saepe similique sed. Similique in alias quos fugiat quis dicta consequatur dolorem eaque
-                        exercitationem
-                        odio provident illo nulla rem odit, beatae ipsa tempora, est ducimus. Nemo ratione repellat
-                        aperiam
-                        voluptas maiores reiciendis quasi? Molestias voluptates qui fugiat optio itaque perferendis
-                        eaque,
-                        porro
-                        ratione iusto ipsam quae voluptatibus?
-                    </p>
-                </div>
+					<div
+						data-aos="fade-left"
+						data-aos-duration="2000"
+						class="trastornos__right"
+					>
+						<lottie-player
+							class="trastornos__img"
+							src="https://assets7.lottiefiles.com/private_files/lf30_kd4lxsxa.json"
+							background="transparent"
+							speed="2"
+							loop
+							autoplay
+						></lottie-player>
+					</div>
+				</div>
+				<!--Fin de transtrono__caja-->
+			</div>
+			<!--Fin de trastorno seccion-->
+		</section>
+		<!--Termina la seccion de tipos de trastornos-->
 
-                <div data-aos="fade-right" data-aos-duration="2000" class="transtornos__right">
-                    <lottie-player class="transtornos__img transtornos__img__walk"
-                        src="/json/91726-sad-guy-is-walking.json" background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                </div>
-            </div>
-            <!--Fin de transtrono__caja-->
+		<!--Inicia la seccion de proposito-->
+		<section id="proposito" class="proposito max">
+			<div data-aos="fade-up" data-aos-duration="2000" class="proposito__flex">
+				<h2 class="proposito__titulo">Proposito</h2>
+				<p class="proposito__texto">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iusto
+					facilis delectus. Dolores eum, excepturi libero in doloribus minima
+					illo consequuntur aliquam praesentium dolore? Delectus iusto aliquid
+					architecto repellendus iure. Maiores molestiae quos omnis impedit,
+					fuga qui quaerat, non ea expedita dolore rerum harum dicta vel facilis
+					laborum? Dolorum, architecto?
+				</p>
+				<lottie-player
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					class="proposito__img"
+					src="https://assets3.lottiefiles.com/packages/lf20_fclga8fl.json"
+					background="transparent"
+					speed="1"
+					loop
+					autoplay
+				>
+				</lottie-player>
+			</div>
+		</section>
 
-            <div id="atencion" class="transtornos__contenedor">
-                <div data-aos="fade-left" data-aos-duration="2000" class="transtornos__left">
-                    <h2 class="transtornos__titulo">TRANSTORNO POR DEFICIT DE ATENCION E HIPERACTIVIDAD
-                    </h2>
-                    <p class="transtornos__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                        voluptates
-                        commodi eos, fugiat porro reprehenderit. Aliquam praesentium impedit voluptatem illo sint modi
-                        voluptatum aliquid vero, ut corporis? Esse velit itaque, reprehenderit similique odio ex
-                        provident
-                        minima et facilis aperiam error atque harum aliquam adipisci quod quasi ratione, inventore
-                        ducimus
-                        saepe similique sed. Similique in alias quos fugiat quis dicta consequatur dolorem eaque
-                        exercitationem
-                        odio provident illo nulla rem odit, beatae ipsa tempora, est ducimus. Nemo ratione repellat
-                        aperiam
-                        voluptas maiores reiciendis quasi? Molestias voluptates qui fugiat optio itaque perferendis
-                        eaque,
-                        porro
-                        ratione iusto ipsam quae voluptatibus?
-                    </p>
-                </div>
+		<!--Footer-->
+		<footer class="footer">
+			<div class="custom-shape-divider-bottom-1642363165">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</div>
 
-                <div data-aos="fade-left" data-aos-duration="2000" class="transtornos__right">
-                    <lottie-player class="transtornos__img"
-                        src="https://assets7.lottiefiles.com/private_files/lf30_kd4lxsxa.json" background="transparent"
-                        speed="2" loop autoplay></lottie-player>
-                </div>
-            </div>
-            <!--Fin de transtrono__caja-->
-        </div>
-        <!--Fin de transtorno seccion-->
-    </section>
-    <!--Termina la seccion de tipos de transtornos-->
+			<div class="footer__superior">
+				<div class="footer__logo">
+					<img class="footer__img" src="/img/Logo.png" width="100" alt="" />
+					<p class="footer__logo__txt">MindBot</p>
+				</div>
 
+				<div class="footer__menu">
+					<a class="footer__menu__enlace" href="#">MindBot</a>
+					<a class="footer__menu__enlace" href="#trastorno"
+						>Trastorno Psciologico</a
+					>
+					<a class="footer__menu__enlace" href="#trastornos"
+						>Tipos de Trastornos</a
+					>
+					<a class="footer__menu__enlace" href="#proposito">Proposito</a>
+				</div>
 
-    <!--Inicia la seccion de proposito-->
-    <section id="proposito" class="proposito max">
-        <div data-aos="fade-up" data-aos-duration="2000" class="proposito__flex">
-            <h2 class="proposito__titulo">Proposito</h2>
-            <p class="proposito__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat iusto facilis
-                delectus. Dolores eum,
-                excepturi libero in doloribus minima illo consequuntur aliquam praesentium dolore? Delectus iusto
-                aliquid
-                architecto repellendus iure. Maiores molestiae quos omnis impedit, fuga qui quaerat, non ea expedita
-                dolore
-                rerum harum dicta vel facilis laborum? Dolorum, architecto?
-            </p>
-            <lottie-player data-aos="fade-up" data-aos-duration="2000" class="proposito__img"
-                src="https://assets3.lottiefiles.com/packages/lf20_fclga8fl.json" background="transparent" speed="1"
-                loop autoplay>
-            </lottie-player>
-        </div>
-    </section>
+				<div class="footer__nosotros">
+					<p class="footer__titulo">SOBRE NOSOTROS</p>
+					<p class="footer__texto">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+						eaque accusamus ab est alias ea at maiores dolor vero!
+						Exercitationem!
+					</p>
+				</div>
 
+				<div class="footer__contacto">
+					<p class="footer__titulo">CONTACTO</p>
+					<p class="footer__texto">Lorem</p>
+				</div>
 
-    <!--Footer-->
-    <footer class="footer">
-        <div class="custom-shape-divider-bottom-1642363165">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-        
-        <div class="footer__superior">
+				<div class="footer__terminos">
+					<a class="footer__texto" href="">Terminos de Servicio</a>
+					<a class="footer__texto" href="">Politicas de Privacidad</a>
+				</div>
 
-            <div class="footer__logo">
-                <img class="footer__img" src="/img/Logo.png" width="100" alt="">
-                <p class="footer__logo__txt">MindBot</p>
-            </div>
-
-            <div class="footer__menu">
-                <a class="footer__menu__enlace" href="#">MindBot</a>
-                <a class="footer__menu__enlace" href="#transtorno">Transtorno Psciologico</a>
-                <a class="footer__menu__enlace" href="#transtornos">Tipos de Transtornos</a>
-                <a class="footer__menu__enlace" href="#proposito">Proposito</a>
-            </div>
-
-            <div class="footer__nosotros">
-                <p class="footer__titulo">SOBRE NOSOTROS</p>
-                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque
-                    accusamus ab est alias ea at maiores dolor vero! Exercitationem!</p>
-            </div>
-
-            <div class="footer__contacto">
-                <p class="footer__titulo">CONTACTO</p>
-                <p class="footer__texto">Lorem</p>
-            </div>
-
-            <div class="footer__terminos">
-                <a class="footer__texto" href="">Terminos de Servicio</a>
-                <a class="footer__texto" href="">Politicas de Privacidad</a>
-            </div>
-
-            <div class="footer__derechos">
-                <p class="footer__texto">2022 © <strong>MindBot</strong>.<br> Todos los derechos reservados</p>
-            </div>
-        </div>
-        
-    </footer>
-
-    
-</body>
-
+				<div class="footer__derechos">
+					<p class="footer__texto">
+						2022 © <strong>MindBot</strong>.<br />
+						Todos los derechos reservados
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
