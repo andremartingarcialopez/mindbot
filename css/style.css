@@ -508,9 +508,7 @@ a {
     transition: 0.5s ease-out;
 }
 
-.contacto__btn-user:active {
-    background-color: var(--azulFuerte);
-}
+
 .icon-user-boton {
     font-size: 5rem;
     color: rgb(255, 255, 255);
