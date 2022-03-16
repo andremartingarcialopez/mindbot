@@ -831,7 +831,8 @@ a {
 }
 
 .contcato__bloque{
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 5rem;
