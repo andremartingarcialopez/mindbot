@@ -188,6 +188,7 @@ a {
 	padding-top: 3rem;
 	color: var(--azulFuerte);
 	text-shadow: 0.1rem 0.1rem 0.5rem black;
+	text-align: center;
 }
 
 .maindbot__texto {
