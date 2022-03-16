@@ -817,6 +817,7 @@ a {
 
 /*Contacto con Areli*/
 .contacto__titulo {
+	width: 100vw;
 	font-size: 6.5rem;
 	padding-top: 3rem;
 	color: var(--azulFuerte);
@@ -828,3 +829,38 @@ a {
 		font-size: 4.5rem;
 	}
 }
+
+.contcato__bloque{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	padding-top: 2rem;
+}
+
+.contacto__bloque-1{
+	text-align: center;
+	align-items: center;
+}
+
+.contacto__bloque-2{
+	align-items: center;
+	padding-top: 3rem;
+}
+
+.contacto__bloque-2 h2{
+	font-size: 4.8rem;
+    padding-bottom: 1rem;
+    color: var(--morado);
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+	text-align: center;
+}
+
+.contacto__bloque-2 p{
+	font-size: 2rem;
+    line-height: 1.5;
+    padding: 1rem 1.5rem;
+}
+
