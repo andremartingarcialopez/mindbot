@@ -16,13 +16,9 @@ html {
 
 body {
 	font-size: 16px;
-	font-family: 'Baloo 2', cursive;
+	font-family: "Baloo 2", cursive;
 	background: rgb(219, 223, 233);
-	background: linear-gradient(
-		0deg,
-		rgba(219, 223, 233, 0.6250875350140056) 40%,
-		rgba(255, 255, 255, 1) 50%
-	);
+	background: linear-gradient(0deg, rgba(219, 223, 233, 0.6250875350140056) 40%, rgba(255, 255, 255, 1) 50%);
 	overflow-x: hidden;
 }
 
@@ -484,40 +480,39 @@ a {
 
 /* Boton flotante*/
 .contacto__btn-user {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 7rem;
-    height: 7rem;
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    border-radius: 50%;
-    z-index: 100;
-    animation-duration: 1.5s;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 7rem;
+	height: 7rem;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	border-radius: 50%;
+	z-index: 100;
+	animation-duration: 1.5s;
 
-    background-color: var(--azulFuerte);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+	background-color: var(--azulFuerte);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .contacto__btn-user:hover {
-    background-color: var(--azulBajito);
-    transition: 0.5s ease-out;
+	background-color: var(--azulBajito);
+	transition: 0.5s ease-out;
 }
-
 
 .icon-user-boton {
-    font-size: 5rem;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-size: 5rem;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.icon-user-boton:hover{
+.icon-user-boton:hover {
 	color: var(--moradoBajito);
 }
 
@@ -820,6 +815,11 @@ a {
 	transition: 0.5s;
 }
 
-
 /*Contacto con Areli*/
-
+.contacto__titulo {
+	font-size: 5.5rem;
+	padding-top: 3rem;
+	color: var(--azulFuerte);
+	text-shadow: 0.1rem 0.1rem 0.5rem black;
+	text-align: center;
+}
