@@ -817,9 +817,14 @@ a {
 
 /*Contacto con Areli*/
 .contacto__titulo {
-	font-size: 4.5rem;
+	font-size: 6.5rem;
 	padding-top: 3rem;
 	color: var(--azulFuerte);
 	text-shadow: 0.1rem 0.1rem 0.5rem black;
 	text-align: center;
+}
+@media (max-width: 480px) {
+	.contacto__titulo{
+		font-size: 4.5rem;
+	}
 }
