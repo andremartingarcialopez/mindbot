@@ -849,6 +849,10 @@ a {
 	align-items: center;
 }
 
+.contacto__bloque-1 p {
+	font-size: 2rem;
+}
+
 @media (max-width: 600px) {
 	.contacto__bloque-1 img {
 		width: 370px;
