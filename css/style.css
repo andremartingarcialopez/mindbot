@@ -825,12 +825,12 @@ a {
 	text-align: center;
 }
 @media (max-width: 480px) {
-	.contacto__titulo{
+	.contacto__titulo {
 		font-size: 4.5rem;
 	}
 }
 
-.contcato__bloque{
+.contcato__bloque {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -839,7 +839,7 @@ a {
 	padding-top: 2rem;
 }
 
-.contacto__bloque-1{
+.contacto__bloque-1 {
 	text-align: center;
 	align-items: center;
 }
@@ -849,42 +849,44 @@ a {
 	align-items: center;
 }
 
-@media (max-width:600px ) {
-	.contacto__bloque-1 img{
+@media (max-width: 600px) {
+	.contacto__bloque-1 img {
 		width: 370px;
 	}
 }
 
-.contacto__bloque-2{
+.contacto__bloque-2 {
 	align-items: center;
 	padding-top: 3rem;
 }
 
-.contacto__bloque-2 h2{
+.contacto__bloque-2 h2 {
 	font-size: 4.8rem;
-    padding-bottom: 1rem;
-    color: var(--morado);
-    font-weight: 700;
-    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+	padding-bottom: 1rem;
+	color: var(--morado);
+	font-weight: 700;
+	text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
 	text-align: center;
 }
 
-.contacto__bloque-2 p{
+.contacto__bloque-2 p {
 	font-size: 2rem;
-    line-height: 1.5;
-    padding: 1rem 1.5rem;
+	line-height: 1.5;
+	padding: 1rem 1.5rem;
 }
 
-article h2{
+article h2 {
 	font-size: 4.8rem;
-    padding-bottom: 1rem;
-    color: var(--morado);
-    font-weight: 700;
-    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
-    text-align: center;
+	padding-bottom: 1rem;
+	color: var(--morado);
+	font-weight: 700;
+	text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+	text-align: center;
 }
 
-.medios__contacto{
+/*Medios de contacto*/
+
+.medios__contacto {
 	padding-top: 4rem;
 	display: grid;
 	width: 100vw;
@@ -893,17 +895,38 @@ article h2{
 	justify-content: center;
 }
 
-.contacto{
+@media (max-width: 600px) {
+	.medios__contacto {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+	}
+}
+
+.contacto {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
 
-
-.icon{
-	font-size: 10rem;
+@media (max-width: 600px) {
+	.contacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+	}
 }
 
+.icon {
+	font-size: 10rem;
+	color: var(--azulFuerte);
+	text-shadow: 0.1rem 0.1rem 1rem var(--morado);
+}
 
-
+.contacto__enlace {
+	color: var(--morado);
+	font-size: 2rem;
+}
