@@ -912,6 +912,22 @@ article h2 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	
+}
+
+.contacto__telefono,
+.contacto__correo{
+	border-right: 0.1rem solid var(--grisBajito);
+	padding: 2rem;
+}
+
+@media (max-width: 600px ) {
+	.contacto__telefono,
+	.contacto__correo{
+		border-right: none;
+		border-bottom: 0.1rem solid var(--grisBajito);
+		
+	}
 }
 
 @media (max-width: 600px) {
@@ -934,3 +950,8 @@ article h2 {
 	color: var(--morado);
 	font-size: 2rem;
 }
+
+.contacto__enlace:hover{
+	text-decoration: underline;
+}
+
