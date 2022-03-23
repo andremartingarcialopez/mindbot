@@ -493,6 +493,12 @@ a {
 	padding: 2rem;
 	padding-top: 8rem;
 }
+@media (max-width: 600px) {
+	.noticias h2{
+		font-size: 4rem;
+		padding-top: 0;
+	}
+}
 .caja__noticias__flex{
 	display: flex;
 	flex-direction: row;
@@ -500,7 +506,7 @@ a {
 	gap: 5rem;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 1024px ) {
 	.caja__noticias__flex{
 		flex-direction: column;
 		justify-content: center;
