@@ -496,7 +496,6 @@ a {
 @media (max-width: 600px) {
 	.noticias h2{
 		font-size: 4rem;
-		padding-top: 0;
 	}
 }
 .caja__noticias__flex{
