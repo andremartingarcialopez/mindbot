@@ -480,7 +480,7 @@ a {
 
 /*Noticias*/
 .noticias{
-	height: 90vh;
+	height: 110vh;
 }
 
 @media (max-width: 768px) {
@@ -508,6 +508,10 @@ a {
 	}
 }
 
+.noticia{
+	text-align: center;
+}
+
 @media (max-width: 768px) {
 	.noticia{
 		display: flex;
@@ -521,14 +525,14 @@ a {
 	border-bottom: var(--grisBajito) solid 0.1rem;
 	padding: 1rem;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .noticia p{
 	padding: 1rem;
-	text-align: center;
-
 }
+
+
 
 /* Boton flotante*/
 .contacto__btn-user {
