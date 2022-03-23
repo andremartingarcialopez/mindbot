@@ -539,6 +539,12 @@ a {
 	text-align: left;
 }
 
+@media (max-width: 600px ) {
+	.noticia p {
+		text-align: center;
+	}
+}
+
 .noticia img {
 	border-radius: 0.5rem;
 }
@@ -548,7 +554,6 @@ a {
 	text-align: left;
 	padding: 1rem;
 	display: block;
-	
 }
 
 .enlace__noticia:hover{
