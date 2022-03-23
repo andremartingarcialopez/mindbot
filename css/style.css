@@ -478,6 +478,32 @@ a {
 	}
 }
 
+/*Noticias*/
+.noticias{
+	height: 80vh;
+}
+.noticias h2{
+	text-align: center;
+	padding: 2rem;
+	padding-top: 8rem;
+}
+.caja__noticias__flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 5rem;
+}
+
+.noticia h3{
+	border-bottom: var(--grisBajito) solid 0.1rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.noticia p{
+	padding: 1rem;
+}
+
 /* Boton flotante*/
 .contacto__btn-user {
 	display: flex;
