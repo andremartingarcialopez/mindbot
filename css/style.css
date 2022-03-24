@@ -533,6 +533,12 @@ a {
 	font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+	.noticia h3{
+		border-bottom: none;
+	}
+}
+
 .noticia p {
 	padding: 1rem;
 	text-align: left;
@@ -655,6 +661,12 @@ a {
     padding-top: 4rem;
     text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
 	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.titulo__noticias{
+		font-size: 4.5rem;
+	}
 }
 
 
