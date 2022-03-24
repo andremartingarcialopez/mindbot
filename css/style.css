@@ -480,7 +480,7 @@ a {
 
 /*Noticias*/
 .noticias {
-	height: 110vh;
+	height: 100vh;
 }
 
 @media (max-width: 768px) {
