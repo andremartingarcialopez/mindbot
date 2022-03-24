@@ -606,6 +606,24 @@ a {
 	font-size: 7rem;
 }
 
+.noticias__grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 3rem;
+	row-gap: 3rem;
+	padding-top: 2rem;
+}
+
+.titulo__noticias{
+	font-size: 5rem;
+    padding-bottom: 1rem;
+    color: var(--morado);
+    font-weight: 700;
+    padding-top: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+}
+
+
 /* Boton flotante*/
 .contacto__btn-user {
 	display: flex;
