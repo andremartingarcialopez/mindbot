@@ -559,6 +559,14 @@ a {
 	text-decoration: underline;
 }
 
+.enlace__todas__noticias a{
+	text-align: center;
+	display: block;
+	padding-top: 3rem;
+	font-size: 3rem;
+	color: var(--azulFuerte)
+}
+
 /*Pagina de noticias*/
 .portada__noticias__flex {
 	display: flex;
