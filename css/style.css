@@ -435,6 +435,10 @@ a {
     text-shadow: 0.1rem 0.1rem 0.5rem var(--grisBajito);
 }
 
+table{
+	padding-top: 5rem;
+}
+
 
 /*Proposito*/
 
