@@ -398,7 +398,7 @@ a {
 	}
 }
 .trastornos__texto {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	line-height: 1.5;
 	padding: 1rem 1.5rem;
 }
@@ -1024,10 +1024,10 @@ th {
 
 .formulario {
 	background-color: whitesmoke;
-	padding: 2rem;
+	padding: 1.5rem;
 	border-radius: 1rem;
 	box-shadow: 0.1rem 0.1rem 1rem var(--morado);
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .formulario__titulo {
@@ -1036,7 +1036,7 @@ th {
 }
 
 .espacio {
-	padding: 1.5rem;
+	padding: 0.7rem;
 }
 
 .label {
@@ -1047,8 +1047,8 @@ th {
 
 .input {
 	width: 100%;
-	padding: 1rem;
-	border-radius: 1rem;
+	padding: 0.7rem;
+	border-radius: 0.7rem;
 	border: none;
 	background-color: var(--azulBajito);
 	border-color: var(--azulBajito);
@@ -1060,7 +1060,7 @@ th {
 }
 
 .boton {
-	padding: 1.5rem 0;
+	padding: 1.2rem 0;
 }
 
 .boton__entrar {
