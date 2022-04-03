@@ -42,70 +42,45 @@
 		<main>
 			<div class="flex">
 				<div class="left__inicar">
-					<img class="left__img" src="/img/Logo.png" width="250px" alt=" " />
+					<img class="left__img" src="/img/Logo.png" width="300px" alt="" />
 					<h2 class="left__title">MindBot</h2>
 				</div>
 
 				<div class="right__iniciar">
-					<form class="formulario" action="">
+					<form class="formulario" action="/register" method="POST">
 						<div>
 							<h2 class="formulario__titulo">Registrate</h2>
-						</div>
-						
-						<div class="espacio">
-							<label class="label" for="">Nombre(s)</label>
-							<input
-								class="input"
-								placeholder="Nombre(s)"
-								type="text"
-							/>
-						</div>
-						<div class="espacio">
-							<label class="label" for="">Apellidos</label>
-							<input
-								class="input"
-								placeholder="Apellidos"
-								type="text"
-							/>
-						</div>
-						<div class="espacio">
-							<label class="label" for="">Edad</label>
-							<input
-								class="input"
-								placeholder="Edad"
-								type="number"
-							/>
-						</div>
-						<div class="espacio">
-							<label class="label" for="">Sexo</label>
-							<input
-								class="input"
-								placeholder="Example@correo.com"
-								type="text"
-							/>
 						</div>
 						<div class="espacio">
 							<label class="label" for="">Nombre de usuario</label>
 							<input
+								id="name"
 								class="input"
 								placeholder="Nombre de Usuario"
 								type="text"
+								name="name"
 							/>
 						</div>
+
 						<div class="espacio">
 							<label class="label" for="">Correo Electronico</label>
 							<input
+								id="email"
 								class="input"
 								placeholder="Example@correo.com"
 								type="email"
+								name="email"
 							/>
 						</div>
+
 						<div class="espacio">
 							<label class="label" for="">Contraseña</label>
 							<input
+								id="password"
 								class="input"
 								placeholder="Contraseña..."
 								type="password"
+								name="password"
 							/>
 						</div>
 
