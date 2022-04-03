@@ -22,6 +22,7 @@
 	<!--Hoja de estilos-->
 	<link rel="preload" href="/css/style.css" as="style" />
 	<link href="/css/style.css" rel="stylesheet" />
+	<link href="/css/chat.css"  rel="stylesheet" />
 	<!--CSS animacion-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!--Logo pestaña web-->
@@ -48,13 +49,10 @@
 			</div>
 
 			<div class="nav_right">
-				<a class="nav__enlace" href="#">MindBot</a>
-				<a class="nav__enlace" href="#trastorno">Trastorno Psicológico</a>
 				<a class="nav__enlace" href="#trastornos">Tipos de Trastornos Psicológicos</a>
 				<a class="nav__enlace" href="#proposito">Propósito</a>
-				<a class="nav__enlace" href="#noticias">Noticias</a>
-				<a class="nav__crear" href="/crear_cuenta.html">Crear Cuenta</a>
-				<a class="nav__iniciar" href="/iniciar_sesion.html">Iniciar Sesion</a>
+				<a class="nav__enlace" href="/noticias.html">Noticias</a>
+				<a class="nav__enlace" href="#historial">Historial</a>
 			</div>
 		</nav>
 	</header>
@@ -66,18 +64,6 @@
 			<div class="main__flex">
 				<img class="main__flex__logo" src="/img/Logo.png" width="100" alt="" />
 				<h1 class="maindbot__titulo">MindBot</h1>
-			</div>
-			<p class="maindbot__texto">
-				MindBot es un sitio web en el cual cualquier usuario tiene la posibilidad
-				de realizar una psicometría psicológica mediante un chatbot que al 
-				terminar nos dirá el resultado en forma de pre evaluación
-				si sufrimos alguno de los siguientes trastornos mentales:
-			</p>
-			<div class="main__trastornos">
-				<a class="main__enlace" href="#ansiedad">Trastorno de Ansiedad</a>
-				<a class="main__enlace" href="#depresion">Trastorno de Depresión</a>
-				<a class="main__enlace" href="#atencion">Trastorno del Sueño<br />
-			</div>
 		</div>
 	</main>
 
@@ -88,257 +74,51 @@
 				<img class="chatbot__imagen animate__animated animate__pulse animate__infinite animate__slower"
 					src="/img/png_20220115_133732_0000.png" width="500" alt="" />
 			</div>
-
+			<!--<link rel="stylesheet" href="/css/chat.css" />-->
 			<div class="chatbot__right">
-				<div class="chatbot__chat">
 					<!--AQUI VA EL CHATBOT-->
-					<img class="chatbot__msj" src="/img/chatbot.jpg" width="350" alt="" />
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--HASTA AQUI.................................................................-->
-
-	<section id="trastorno" class="trastorno">
-		<div class="trastorno__flex max">
-			<div data-aos="fade-up" data-aos-duration="2000" class="trastorno__left">
-				<h2 class="trastorno__titulo">¿QUE ES UN TRASTORNO PSICOLÓGICO?</h2>
-				<p class="trastorno__texto">
-					Podríamos definir un trastorno psicológico, también conocido como trastorno
-					mental, como un patrón de síntomas psicológicos o de comportamiento 
-					que afectan a varias áreas de la vida y/o crean alguna clase de malestar 
-					emocional en la persona que lo padece.</p>
-				<p class="trastorno__texto">	
-					El DSM (Manual Diagnóstico y Estadístico de los Trastornos Mentales) establece 
-					la siguiente definición:
-					«Un trastorno mental es un síndrome caracterizado por una alteración clínicamente 
-					significativa del estado cognitivo, la regulación emocional o el comportamiento de 
-					un individuo, que refleja una disfunción de los procesos psicológicos, biológicos 
-					o del desarrollo que subyacen en su función mental.» </p>
-			</div>
-
-			<div data-aos="fade-up" data-aos-duration="2000" class="trastorno__right">
-				<lottie-player class="trastorno__img" src="/json/83054-neurologist.json" background="transparent"
-					speed="1.5" loop autoplay></lottie-player>
-				<!--AQUI VA UNA IMAGEN/ANIMACION SVG-->
-			</div>
-		</div>
-	</section>
-
-	<!--Seccion de tipos de trastornos-->
-	<section class="max trastornos">
-		<div id="trastornos" class="trastornos__seccion">
-			<!--Inicia tipo de transtrono contenedor-->
-			<h2 data-aos="fade-up" data-aos-duration="2000" class="trastorno__titulo">
-				Tipos de Trastornos Psicológicos
-			</h2>
-			<div id="ansiedad" class="trastornos__contenedor">
-				<div data-aos="fade-left" data-aos-duration="2000" class="trastornos__left">
-					<h2 class="trastornos__titulo">¿CÓMO SE VE LA ANSIEDAD?</h2>
-					<p class="trastornos__texto">
-						La ansiedad se puede presentar en muchas ocasiones de nuestra vida, 
-			        	sin embargo se vuelve un tema de salud mental cuando ya no nos permite 
-						ser funcionales en nuestro contexto, es decir cuando la llevamos a un 
-						nivel tal que nos impide vivir. 
-						Algunos de sus síntomas son los siguientes:</p>
-						<ul style= "list-style-type: square;" >
-						<li>Palpitaciones.</li>
-						<li>Sudoración excesiva.</li>
-						<li>Aumento de la tensión muscular y de la respiración.</li>
-						<li>Dolores físicos.</li>
-						<li>Dilatación de la pupila.</li>
-						<li>Necesitar ir al baño a menudo.</li>
-						</ul>
-					<p class="trastornos__texto">
-						La ansiedad es el trastorno con mayor impacto en el mundo, si bien es una
-						respuesta adaptativa, gestionada de manera incorrecta se convierte en una
-						enfermedad mental  que produce sensaciones parecidas a las de estar muriendo. 
-					</p>
+				<main class="msger-chat">
+					<div class="msg left-msg">
+					  <div
+					   class="msg-img"
+					   style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+					  ></div>
+				
+					  <div class="msg-bubble">
+						<div class="msg-info">
+						  <div class="msg-info-name">MindBot</div>
+						  <div class="msg-info-time">12:45</div>
+						</div>
+				
+						<div class="msg-text">
+						  Hi, welcome to SimpleChat! Go ahead and send me a message. 😄
+						</div>
+					  </div>
+					</div>
+					<div class="msg right-msg">
+						<div
+						 class="msg-img"
+						 style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
+						></div>
+				  
+						<div class="msg-bubble">
+						  <div class="msg-info">
+							<div class="msg-info-name">Usuario</div>
+							<div class="msg-info-time">12:46</div>
+						  </div>
+						  <div class="msg-text">
+							You can change your name in JS section!
+						  </div>
+						</div>
+					  	</div>
+					  	<form class="msger-inputarea">
+							<input type="text" class="msger-input" placeholder="Enter your message...">
+							<button type="submit" class="msger-send-btn">Enviar</button>
+					  	</form>
+						<script src="/js/chat.js"></script>
+					</main>
 					
-				</div>
-
-				<div data-aos="fade-left" data-aos-duration="2000" class="trastornos__right">
-					<lottie-player class="trastornos__img"
-						src="https://assets1.lottiefiles.com/packages/lf20_tijmpky4.json" background="transparent"
-						speed="2" loop autoplay></lottie-player>
-				</div>
 			</div>
-			<!--Fin de transtrono__caja-->
-
-			<div id="depresion" class="trastornos__contenedor">
-				<div data-aos="fade-right" data-aos-duration="2000" class="trastornos__left">
-					<h2 class="trastornos__titulo">¿CÓMO SE VE LA DEPRESIÓN?</h2>
-					<p class="trastornos__texto">
-						Es un cuadro clínico en donde es característico un descenso del 
-						estado de ánimo de la persona, se pierde el interés y la capacidad
-						de disfrutar de la vida, hay poca energía, puede existir en conjunto
-						problemas de ansiedad, alteraciones del sueño, dificultades para 
-						concentrarse todo esto puede llevar a mermar la vida social, laboral
-						y familia, por un tiempo prologado y sin una adecuada intervención 
-						puede llevar a un suicidio. Algunos de sus síntomas son:
-					</p>
-					<ul aling=left style= "list-style-type: square;" >
-						<li>Sentimientos persistentes de tristeza, ansiedad o “vacío”, desesperanza o pesimismo.</li>
-						<li>Irritabilidad o intranquilidad.</li>
-						<li>Pérdida de interés en actividades que antes generaban placer.</li>
-						<li>Disminución de energía.</li>
-						<li>Falta de concentración.</li>
-						<li>Dificultad para dormir.</li>
-						<li>Dolores de cabeza o problemas digestivos.</li>
-						<li>Intentos de suicidio o pensamientos sobre la muerte o el suicidio.</li>
-						</ul>
-					<p class="trastornos__texto">
-						La depresión puede afectar a las personas de diferentes maneras, según
-						su contexto o su edad, es por eso que para ser diagnosticada como tal,
-						es importante acudir con un profesional de la salud mental ante 
-						alguna sospecha de padecimiento. 
-					</p>
-					
-
-				</div>
-
-				<div data-aos="fade-right" data-aos-duration="2000" class="trastornos__right">
-					<lottie-player class="trastornos__img trastornos__img__walk"
-						src="/json/91726-sad-guy-is-walking.json" background="transparent" speed="1" loop autoplay>
-					</lottie-player>
-				</div>
-			</div>
-			<!--Fin de transtrono__caja-->
-
-			<div id="atencion" class="trastornos__contenedor">
-				<div data-aos="fade-left" data-aos-duration="2000" class="trastornos__left">
-					<h2 class="trastornos__titulo">
-						¿QUÉ Y CUÁLES SON LOS TRASTORNOS DEL SUEÑO?	
-					</h2>
-					<p class="trastornos__texto">
-						Los problemas del sueño suelen presentarse en diversos cuadros
-						clínicos, sin embargo hablando únicamente de ellos podemos decir 
-						que son aquelllas afecciones que impactan directamente en la capacidad 
-						de dormir bien de manera regular. En algún momento de nuestra vida 
-						presentaremos problemas para dormir, ya sea por estrés, la higiene 
-						que tengamos del sueño o algunas otras influencias externas. Sin embargo, 
-						cuando estos problemas empiezan a suceder con regularidad e interfieren 
-						con la vida diaria, pueden indicar un trastorno del sueño. 
-						Algunos de los síntomas generales son:
-					</p>
-					<ul style= "list-style-type: square;" >
-						<li>Dificultad para conciliar el sueño y permanecer dormido.</li>
-						<li>Fatiga.</li>
-						<li>Necesidad fuerte de tomar siestas durante el día.</li>
-						<li>Patrones inusuales de respiración.</li>
-						<li>Movimientos inusuales u otras experiencias mientras duermes.</li>
-						<li>Cambios involuntarios en tu horario de sueño/vigilia.</li>
-						<li>Limitación en tu desempeño en el trabajo o la escuela.</li>
-						<li>Falta de concentración.</li>
-						<li>Depresión.</li>
-						<li>Aumento de peso.</li>
-						</ul>
-				</div>
-
-				<div data-aos="fade-left" data-aos-duration="2000" class="trastornos__right">
-					<lottie-player class="trastornos__img"
-						src="https://assets7.lottiefiles.com/private_files/lf30_kd4lxsxa.json" background="transparent"
-						speed="2" loop autoplay></lottie-player>
-				</div>
-			</div>
-			<!--Fin de transtrono__caja-->
-		</div>
-		<!--Fin de trastorno seccion-->
-	</section>
-	<!--Termina la seccion de tipos de trastornos-->
-
-	<!--Seccion de noticias-->
-	<section data-aos="fade-down" data-aos-duration="2000" id="noticias" class="noticias">
-		<div>
-			<h2 class="trastorno__titulo aos-init aos-animate"> Ultimas Noticias</h2>
-
-			<div class="caja__noticias caja__noticias__flex max">
-
-				<!--Inicia Noticia 1-->
-				<div class="noticia">
-					<img width="300px" src="/img/noticia depreseion.jpg" alt="">
-					<h3 class="trastornos__titulo">La pandemia de COVID-19 dispara la depresión y la ansiedad</h3>
-					<p>Las enfermedades mentales crecieron más entre las mujeres que entre los hombres y en los jóvenes
-						más que en los adultos, destaca un nuevo informe de la agencia sanitaria de la ONU que entiende
-						esta situación “como una llamada de atención” y emplaza a todos los países a mejorar el apoyo
-						que prestan a este tipo de afecciones.</p>
-					<a class="enlace__noticia" href="https://news.un.org/es/story/2022/03/1504932">Mas
-						informacion...</a>
-				</div>
-				<!--Termina Noticia 1-->
-
-				<!--Inicia Noticia 1-->
-				<div class="noticia">
-					<img width="300px" src="/img/noticia2.jpg" alt="">
-					<h3 class="trastornos__titulo">
-						América Latina: El personal de la salud muestra elevados niveles de depresión y pensamiento
-						suicida debido a la pandemia</h3>
-					<p>Sin embargo, solo un tercio de los que necesitaban ayuda psicológica la recibieron y no en todos
-						los países, de acuerdo con un estudio que cuenta con la colaboración de la agencia para la salud
-						de la ONU en el continente americano.</p>
-					<a class="enlace__noticia" href="https://news.un.org/es/story/2022/01/1502562">Mas
-						informacion...</a>
-
-				</div>
-				<!--Termina Noticia 1-->
-
-				<!--Inicia Noticia 1-->
-				<div class="noticia">
-					<img width="300px" src="/img/noticia 3.jpg" alt="">
-					<h3 class="trastornos__titulo">El ajedrez tranquiliza, mejora la salud mental y ayuda a la
-						recuperación tras la pandemia</h3>
-					<p>En la jornada dedicada al ajedrez, la ONU destaca que si bien la pandemia de COVID-19 ha limitado
-						la práctica de muchos deportes, este antiguo juego de intelecto ha demostrado una notable
-						resistencia y adaptabilidad durante meses de confinamiento.</p>
-
-					<a class="enlace__noticia" href="https://news.un.org/es/story/2021/07/1494552">Mas
-						informacion...</a>
-
-				</div>
-				<!--Termina Noticia 1-->
-
-				<!--Inicia Noticia 1-->
-				<div class="noticia">
-					<img width="300px" src="/img/noticia4 .png" alt="">
-					<h3 class="trastornos__titulo">El “efecto devastador” del COVID-19 en la salud mental</h3>
-					<p>Las tasas de ansiedad, depresión y estrés postraumático se han disparado en todo el continente,
-						según un estudio reciente de la Organización Panamericana de la Salud. Además, los índices de
-						violencia en la región triplican la media mundial antes de la pandemia. La violencia doméstica
-						contra mujeres y niños se ha recrudecido.</p>
-
-					<a class="enlace__noticia"
-						href="https://news.un.org/es/story/2021/11/1500512#:~:text=Las%20tasas%20de%20ansiedad%2C%20depresi%C3%B3n,mundial%20antes%20de%20la%20pandemia.">Mas
-						informacion...</a>
-
-				</div>
-				<!--Termina Noticia 1-->
-
-			</div>
-			<!--Se termina caja de noticias-->
-			<div class="enlace__todas__noticias">
-				<a class="animate__animated animate__pulse animate__slower animate__infinite"  href="/noticias.html">Todas las noticias → </a>
-			</div>
-		</div>
-
-	</section>
-
-	<!--Inicia la seccion de proposito-->
-	<section id="proposito" class="proposito max">
-		<div data-aos="fade-up" data-aos-duration="2000" class="proposito__flex">
-			<h2 class="proposito__titulo">Propósito</h2>
-			<p class="proposito__texto">
-				Ayudar a las personas a identificar si se presenta una 
-				enfermedad mental basándose en sus síntomas, la aplicación web consta de una psicometría 
-				aplicada mediante un chatbot, el cual arrojará una pre evaluación sobre que enfermedad 
-				pueda presentar el usuario, esta idea surgió gracias a la situación que se ha presentado en 
-				los últimos dos años sobre la cuarentena respecto a la pandemia del COVID-19, ya que el 
-				estar aislado durante mucho tiempo puede provocar cuadros de ansiedad o depresión.
-			</p>
-			<lottie-player data-aos="fade-up" data-aos-duration="2000" class="proposito__img"
-				src="https://assets3.lottiefiles.com/packages/lf20_fclga8fl.json" background="transparent" speed="1"
-				loop autoplay>
-			</lottie-player>
 		</div>
 	</section>
 

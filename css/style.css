@@ -228,7 +228,7 @@ a {
 	justify-content: space-between;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
 	.chatbot {
 		display: flex;
 		flex-direction: column;
@@ -261,6 +261,8 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 150%;
+	
 }
 
 .chatbot__chat {
