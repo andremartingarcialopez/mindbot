@@ -12,9 +12,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
+//URI A BASE DE DATOS CON MONGODB
 const mongo_uri =
 	'mongodb+srv://Lucio:Lucio3311714641@chatbot.4nzz7.mongodb.net/chatbot';
 
+// CONEXIÓN A LA BASE DE DATOS
 mongoose.connect(mongo_uri, function (err) {
 	if (err) {
 		throw err;
@@ -23,6 +25,7 @@ mongoose.connect(mongo_uri, function (err) {
 	}
 });
 
+// METODO PARA REGISTRAR USUARIOS
 app.post('/register', (req, res) => {
 	const { name, email, password } = req.body;
 	const user = new User({ name, email, password });
@@ -35,6 +38,7 @@ app.post('/register', (req, res) => {
 	});
 });
 
+// METODO PARA AUTENTICAR USUARIOS
 app.post('/authenticate', (req, res) => {
 	const { email, password } = req.body;
 	User.findOne({ email }, (err, user) => {

@@ -1,149 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Color web-->
+		<meta name="theme-color" content="#6ca4ff" />
+		<!--Palabras claves-->
+		<meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS" />
+		<!--Descripcion-->
+		<meta name="description" content="DESCRIPCION DE LA PAGINA" />
+		<title>MindBot</title>
+		<!--Normalize-->
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="preload" href="/css/normalize.css" as="style" />
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Hoja de estilos-->
+		<link rel="preload" href="/css/style.css" as="style" />
+		<link href="/css/style.css" rel="stylesheet" />
+		<!--CSS animacion-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<!--Logo pestaña web-->
+		<link rel="shortcut icon" type="image/x-ico" href="/img/Logo - copia.ico" />
+		<!--Animaciones SVG-->
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!--Animaciones de entradas-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!--Animaciones de entrada-->
+		<!-- Iconos Fontello-->
+		<link rel="stylesheet" href="/fontello-67dcd4d9/css/fontello.css" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="/js/scripts.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--Color web-->
-	<meta name="theme-color" content="#6ca4ff" />
-	<!--Palabras claves-->
-	<meta name="keywords" content="PALABRAS, CLAVES, CON ESPACIOS" />
-	<!--Descripcion-->
-	<meta name="description" content="DESCRIPCION DE LA PAGINA" />
-	<title>MindBot</title>
-	<!--Normalize-->
-	<link rel="stylesheet" href="/css/normalize.css" />
-	<link rel="preload" href="/css/normalize.css" as="style" />
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet" />
-	<!--Hoja de estilos-->
-	<link rel="preload" href="/css/style.css" as="style" />
-	<link href="/css/style.css" rel="stylesheet" />
-	<!--CSS animacion-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<!--Logo pestaña web-->
-	<link rel="shortcut icon" type="image/x-ico" href="/img/Logo - copia.ico" />
-	<!--Animaciones SVG-->
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-	<!--Animaciones de entradas-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-	<!--Animaciones de entrada-->
-	<!-- Iconos Fontello-->
-	<link rel="stylesheet" href="/fontello-67dcd4d9/css/fontello.css">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="/js/scripts.js"></script>
-</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="nav__left">
+					<a class="nav__left__enlace" href="#">
+						<img class="nav__logo" src="/img/Logo.png" width="60px" alt="" />
+						<h2 class="nav__titulo">MindBot</h2>
+					</a>
+				</div>
 
-<body>
-	<header>
-		<nav class="nav">
-			<div class="nav__left">
-				<a class="nav__left__enlace" href="#">
-					<img class="nav__logo" src="/img/Logo.png" width="60px" alt="" />
-					<h2 class="nav__titulo">MindBot</h2>
-				</a>
-			</div>
+				<div class="nav_right">
+					<a class="nav__enlace" href="#">MindBot</a>
+					<a class="nav__enlace" href="#trastornos"
+						>Tipos de Trastornos Psicológicos</a
+					>
+					<a class="nav__enlace" href="/noticias.html">Noticias</a>
+					<a class="nav__enlace" href="/historial.html">Historial</a>
+				</div>
+			</nav>
+		</header>
+		<!--Termina el header-->
 
-			<div class="nav_right">
-				<a class="nav__enlace" href="#">MindBot</a>
-				<a class="nav__enlace" href="#trastornos">Tipos de Trastornos Psicológicos</a>
-				<a class="nav__enlace" href="/noticias.html">Noticias</a>
-				<a class="nav__enlace" href="/historial.html">Historial</a>
-			</div>
-		</nav>
-	</header>
-	<!--Termina el header-->
-
-	<!--Inicia el main-->
-	<main id="main" class="main">
-		<div data-aos="fade-right" data-aos-duration="2000" class="mindbot max">
-			<div class="main__flex">
-				<img class="main__flex__logo" src="/img/Logo.png" width="100" alt="" />
-				<h1 class="maindbot__titulo">MindBot</h1>
-			</div>
-		</div>
-	</main>
-
-	<!--Seccion de CHATBOT-->
-	<section class="chatbot__section">
-		<div class="chatbot max">
-			<div class="chatbot__left">
-				<img class="chatbot__imagen animate__animated animate__pulse animate__infinite animate__slower"
-					src="/img/png_20220115_133732_0000.png" width="500" alt="" />
-			</div>
-
-			<div class="chatbot__right">
-				<div class="chatbot__chat">
-					<!--AQUI VA EL CHATBOT-->
-					<img class="chatbot__msj" src="/img/chatbot.jpg" width="350" alt="" />
+		<!--Inicia el main-->
+		<main id="main" class="main">
+			<div data-aos="fade-right" data-aos-duration="2000" class="mindbot max">
+				<div class="main__flex">
+					<img
+						class="main__flex__logo"
+						src="/img/Logo.png"
+						width="100"
+						alt=""
+					/>
+					<h1 class="maindbot__titulo">MindBot</h1>
 				</div>
 			</div>
-		</div>
-	</section>
+		</main>
 
-	<!-- Boton flotante -->
-	<section class="contacto">
-		<a href="/contacto.html">
-			<div class="animate__animated animate__pulse animate__infinite contacto__btn-user">
-				<i title="Contacto" class="icon-user-boton icon-user"></i>
+		<!--Seccion de CHATBOT-->
+		<section class="chatbot__section">
+			<div class="chatbot max">
+				<div class="chatbot__left">
+					<img
+						class="chatbot__imagen animate__animated animate__pulse animate__infinite animate__slower"
+						src="/img/png_20220115_133732_0000.png"
+						width="500"
+						alt=""
+					/>
+				</div>
+
+				<div class="chatbot__right">
+					<div class="chatbot__chat">
+						<!--AQUI VA EL CHATBOT-->
+						<script
+							SameSite="None; Secure"
+							src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"
+						></script>
+						<div id="myLandbot" style="width: 100%; height: 500px"></div>
+						<script>
+							var myLandbot = new Landbot.Container({
+								container: '#myLandbot',
+								configUrl:
+									'https://chats.landbot.io/v3/H-1200906-2GI3ZT9DOSN10Y2A/index.json',
+							});
+						</script>
+					</div>
+				</div>
 			</div>
-		</a>
+		</section>
 
-	</section>
+		<!-- Boton flotante -->
+		<section class="contacto">
+			<a href="/contacto.html">
+				<div
+					class="animate__animated animate__pulse animate__infinite contacto__btn-user"
+				>
+					<i title="Contacto" class="icon-user-boton icon-user"></i>
+				</div>
+			</a>
+		</section>
 
-	<!--Footer-->
-	<footer class="footer">
-		<div class="custom-shape-divider-bottom-1642363165">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-				preserveAspectRatio="none">
-				<path
-					d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-					class="shape-fill"></path>
-			</svg>
-		</div>
-
-		<div class="footer__superior">
-			<div class="footer__logo">
-				<img class="footer__img" src="/img/Logo.png" width="100" alt="" />
-				<p class="footer__logo__txt">MindBot</p>
+		<!--Footer-->
+		<footer class="footer">
+			<div class="custom-shape-divider-bottom-1642363165">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+						class="shape-fill"
+					></path>
+				</svg>
 			</div>
 
-			<div class="footer__menu">
-				<a class="footer__menu__enlace" href="#">MindBot</a>
-				<a class="footer__menu__enlace" href="#noticias">Noticias</a>
-				<a class="footer__menu__enlace" href="#proposito">Propósito</a>
-			</div>
+			<div class="footer__superior">
+				<div class="footer__logo">
+					<img class="footer__img" src="/img/Logo.png" width="100" alt="" />
+					<p class="footer__logo__txt">MindBot</p>
+				</div>
 
-			<div class="footer__nosotros">
-				<p class="footer__titulo">SOBRE NOSOTROS</p>
-				<p class="footer__texto">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-					eaque accusamus ab est alias ea at maiores dolor vero!
-					Exercitationem!
-				</p>
-			</div>
+				<div class="footer__menu">
+					<a class="footer__menu__enlace" href="#">MindBot</a>
+					<a class="footer__menu__enlace" href="#noticias">Noticias</a>
+					<a class="footer__menu__enlace" href="#proposito">Propósito</a>
+				</div>
 
-			<div class="footer__contacto">
-				<p class="footer__titulo">CONTACTO</p>
-				<p class="footer__texto"> </p>
-			</div>
+				<div class="footer__nosotros">
+					<p class="footer__titulo">SOBRE NOSOTROS</p>
+					<p class="footer__texto">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+						eaque accusamus ab est alias ea at maiores dolor vero!
+						Exercitationem!
+					</p>
+				</div>
 
-			<div class="footer__terminos">
-				<a class="footer__texto" href="">Términos de Servicio</a>
-				<a class="footer__texto" href="">Políticas de Privacidad</a>
-			</div>
+				<div class="footer__contacto">
+					<p class="footer__titulo">CONTACTO</p>
+					<p class="footer__texto"></p>
+				</div>
 
-			<div class="footer__derechos">
-				<p class="footer__texto">
-					2022 © <strong>MindBot</strong>.<br />
-					Todos los derechos reservados.
-				</p>
-			</div>
-		</div>
-	</footer>
-</body>
+				<div class="footer__terminos">
+					<a class="footer__texto" href="">Términos de Servicio</a>
+					<a class="footer__texto" href="">Políticas de Privacidad</a>
+				</div>
 
-</html> 
+				<div class="footer__derechos">
+					<p class="footer__texto">
+						2022 © <strong>MindBot</strong>.<br />
+						Todos los derechos reservados.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
