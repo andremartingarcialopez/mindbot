@@ -6,54 +6,59 @@ const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./public/user');
+//const { connect } = require('http2');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
 //URI A BASE DE DATOS CON MONGODB
-const mongo_uri =
-	'mongodb+srv://Lucio:Lucio3311714641@chatbot.4nzz7.mongodb.net/chatbot';
 
 // CONEXIÓN A LA BASE DE DATOS
-mongoose.connect(mongo_uri, function (err) {
-	if (err) {
-		throw err;
-	} else {
-		console.log(`Connected to Mongo ${mongo_uri}`);
-	}
+mongoose.connect(
+	'mongodb+srv://admin:Admin.123@chatbot.4nzz7.mongodb.net/chatbot',
+	{ useNewUrlParser: true, useUnifiedTopology: true }
+);
+const connection = mongoose.connection;
+
+connection.once('open', () => {
+	console.log('Connected to Mongo');
+});
+
+connection.once('error', (err) => {
+	console.log('Error connecting', err);
 });
 
 // METODO PARA REGISTRAR USUARIOS
-app.post('/register', (req, res) => {
+app.post('/register', async (req, res) => {
 	const { name, email, password } = req.body;
 	const user = new User({ name, email, password });
-	user.save((err) => {
-		if (err) {
-			res.status(500).send('ERROR AL REGISTRAR AL USUARIO');
-		} else {
-			res.status(200).send('USUARIO REGISTRADO');
-		}
-	});
+	await user.save();
+	res.redirect('/iniciar_sesion.html');
 });
 
 // METODO PARA AUTENTICAR USUARIOS
-app.post('/authenticate', (req, res) => {
+app.post('/authenticate', async (req, res) => {
 	const { email, password } = req.body;
 	User.findOne({ email }, (err, user) => {
 		if (err) {
-			res.status(500).send('ERROR AL AUTENTICAR AL USUARIO');
+			//res.status(500).send('ERROR AL AUTENTICAR AL USUARIO');
+			res.redirect('iniciar_sesion.html');
 		} else if (!user) {
-			res.status(200).send('EL USUARIO NO EXISTE');
+			//res.status(200).send('EL USUARIO NO EXISTE');
+			res.redirect('iniciar_sesion.html');
 		} else {
 			user.isCorrectPassword(password, (err, result) => {
 				if (err) {
-					res.status(500).send('ERROR AL AUTENTICAR AL USUARIO');
+					//res.status(500).send('ERROR AL AUTENTICAR AL USUARIO');
+					res.redirect('iniciar_sesion.html');
 				} else if (result) {
-					res.status(200).send('USUARIO AUTENTICADO CORRECTAMENTE');
+					/* res.status(200).send('USUARIO AUTENTICADO CORRECTAMENTE'); */
+					res.redirect('/principal.html');
 				} else {
-					res.status(500).send('USUARIO Y/O CONTRASEÑA INCORRECTA');
+					//res.status(500).send('USUARIO Y/O CONTRASEÑA INCORRECTA');
+					res.redirect('iniciar_sesion.html');
 				}
 			});
 		}
