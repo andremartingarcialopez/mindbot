@@ -1106,3 +1106,65 @@ article h2 {
 .contacto__enlace:hover {
 	text-decoration: underline;
 }
+
+/*Seccion historial */
+.section__historial{
+	height: 100vh;
+}
+
+@media (max-width:1024px ) {
+	.section__historial{
+		height: auto;
+	}
+}
+
+.section__historial h2 {
+	text-align: center;
+	font-size: 4.8rem;
+	padding-bottom: 1rem;
+	color: var(--morado);
+	font-weight: 700;
+	padding-top: 4rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem var(--azulFuerte);
+	padding-top: 7rem;
+}
+
+.section__historial p{
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+	.section__historial p{
+		text-align: center;
+	}
+}
+
+
+.historial__flex{
+	display: flex;
+	gap: 5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 1024px) {
+	.historial__flex{
+		flex-direction: column;
+		gap: 0;
+	}
+}
+
+.animacion__hitorial{
+	
+	width: 50rem;
+	height: 50rem;
+}
+
+@media (max-width:1024px ) {
+	.animacion__hitorial{
+		width: 100%;
+		height: 100%;
+	}
+}
+
