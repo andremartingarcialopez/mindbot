@@ -3,23 +3,24 @@ const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
 
 const BOT_MSGS = [
-  "Me he sentido triste y decaído",
-  "He tenido ganas de llorar o he llorado",
-  "Me he sentido cansado sin razón aparente",
-  "Me he sentido inquieto e intranquilo",
-  "Me he sentido mas irritable que de costumbre ",
-  "No Me he sentido útil y necesario     ",
-  "No He disfrutado mis actividades cotidianas   ",
-  "No He encontrado agradable vivir      ",
-  "No me siento atemorizado sin motivo    ",
-  "Sufro de fuertes dolores de cabeza y cuello",
-  "Siento que el corazón me late más rápido ",
-  "Orino o siento ganas de orinar con mucha frecuencia ",
-  "Sufro de dolores de estómago e indigestión ",
-  "No duermo fácilmente y descanso por las noches",
-  "Tengo pesadillas ",
-  "No Puedo conciliar el sueño en la primera media hora después de acostarme  ",
-  "No Puedo respirar cómodamente "
+  "Te has sentido triste o decaído?",
+  "Has tenido ganas de llorar o has llorado?",
+  "Te has sentido cansado sin razon aparente?",
+  "Te has sentido inquieto e intranquilo?",
+  "Te has sentido más irritable que de costumbre?",
+  "No te has sentido muy útil y necesario? ",
+  "No has disfrutado tus actividades cotidianas?",
+  "No has encontrado agradable vivir?",
+  "Te has sentido atemorizado sin motivo?",
+  "Te has sentido atemorizado sin motivo?",
+  "Sufres fuertes dolores de cabeza y/o cuello?",
+  "Sientes que el corazón late más rápido?",
+  "Orino o siento ganas de orinar con mucha frecuencia?",
+  "Subres de dolores de estómago e indigestión?  ",
+  "No duermes falcimente y descanso por las noches?",
+  "Tienes pesadillas?",
+  "No puedes conciliar el sueño la primera media hora despues de acostarte? ",
+  "No puedes respirar cómodamente? "
 ];
 
 // Icons made by Freepik from www.flaticon.com
