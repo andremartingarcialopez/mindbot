@@ -1,3 +1,4 @@
+'use strict'
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -6,6 +7,7 @@ const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./public/user');
+const Historial = require('./public/js/historial.js');
 //const { connect } = require('http2');
 
 app.use(bodyParser.json());
@@ -64,6 +66,34 @@ app.post('/authenticate', async (req, res) => {
 		}
 	});
 });
+
+app.post('/insertar', (req, res) =>{
+	console.log('POST /insertar')
+	console.log(req.body)
+	
+	let historial = new Historial()
+	historial.fecha = req.body.fecha
+	historial.resultado = req.body.resultado
+
+	historial.save((err, historialAll) => {
+		if (err) res.status(500).send({message: `Error al guardar:  ${err}`})
+
+		res.status(200).send({historial: historialAll})
+
+	})
+
+});
+ //METODO GET PARA OBTENER HISTORIAL
+app.get('/historial', (req, res) => {
+    Historial.find({}, (err, historial) => {
+		if(err) return res.status(500).send({message: `Error a realizar la petición: ${err}`})
+		if (!historial) return res.status(404).send({message: `El registro existe`})
+
+		res.send(200, { historial })
+	})
+	
+});
+
 
 app.listen(3000, () => {
 	console.log('server started');

@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="/fontello-67dcd4d9/css/fontello.css">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/js/scripts.js"></script>
+    
     </head>	
     <header class="back">
         <div class="max back__">
@@ -32,28 +33,69 @@
                     <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_aKRZfw.json" background="transparent"
                         speed="1"  class="animacion__hitorial" loop autoplay></lottie-player>
             </div>
-            <div id="main-container">
+            <div>
                 <table>
                     <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Resultado</th>
+                            </tr>
+                     </thead>
+                     <tbody id= "data"></tbody>
+                    </table>    
+            </div>
+            <script>
+                let url = 'http://localhost:3000/historial/';
+                  fetch(url)
+                      .then( response => response.json() )
+                      .then( data => mostrarData(data) )
+                      .catch( error => console.log(error) )
+          
+                  const mostrarData = (data) => {
+                      console.log(data)
+                      let body = ""
+                      for (var i = 0; i < data.length; i++) {      
+                         body+=`<tr><td>${data[i].fecha}</td><td>${data[i].resultado}</td></tr>`
+                      }
+                      document.getElementById('data').innerHTML = body
+                      console.log(body);
+                  }
+              </script>
+                       <!--  <table id = "historial">
+                    <thead>
                         <tr>
-                            <th>Fecha</th><th>Resultado</th>
+                            <th>Fecha</th>
+                            <th>Resultado</th>
                         </tr>
                     </thead>
-        
-                    <tr>
-                        <td>13-01-2022</td><td>Tendencia a depresión</td>
-                    </tr>
-                    <tr>
-                        <td>14-02-2022</td><td>Tendencia a depresión</td>
-                    </tr>
-                    <tr>
-                        <td>15-03-2022</td><td>Tendencia a depresión</td>
-                    </tr>
-                    <tr>
-                        <td>20-03-2022</td><td>Tendencia a depresión</td>
-                    </tr>
                 </table>
-            </div>
+                    <script>
+                        let historial = new Array(4);
+                        historial[0] = {fecha: '04-15-2022', resultado: 'Depresion'};
+                        historial[1] = {fecha: '04-15-2022', resultado: 'Depresion'};
+                        historial[2] = {fecha: '04-15-2022', resultado: 'Depresion'};
+                        historial[3] = {fecha: '04-15-2022', resultado: 'Depresion'};
+
+
+                        let tablaHistorial = document.getElementById('historial');
+                        let bodyTabla = document.createElement('tbody');
+
+                        historial.forEach(p =>{
+                            let fila =document.createElement('tr');
+
+                            let td = document.createElement('td');
+                            td.innerText = p.fecha;
+                            fila.appendChild(td);
+
+                            td = document.createElement('td');
+                            td.innerText = p.resultado;
+                            fila.appendChild(td);
+
+                            bodyTabla.appendChild(fila);
+                        });
+
+                        tablaHistorial.appendChild(bodyTabla);
+                    </script>  -->
     </section>
 </body>
 </html>
