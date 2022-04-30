@@ -1,8 +1,9 @@
-'use strict'
+'use strict';
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
+const ejs = require('ejs');
 
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
@@ -67,33 +68,79 @@ app.post('/authenticate', async (req, res) => {
 	});
 });
 
-app.post('/insertar', (req, res) =>{
-	console.log('POST /insertar')
-	console.log(req.body)
-	
-	let historial = new Historial()
-	historial.fecha = req.body.fecha
-	historial.resultado = req.body.resultado
+app.set('view engine', 'ejs');
+
+app.get('/historial', (req, res) => {
+	Historial.find({}, function (err, historial) {
+		res.render('historial', {
+			historialList: historial,
+		});
+	});
+});
+app.post('/result', function (req, res) {
+	const date = new Date();
+	const fecha = date.toLocaleDateString();
+
+	let newHistorial = new Historial({
+		fecha: fecha,
+		resultado: req.body.resultado,
+	});
+	newHistorial.save();
+	res.redirect('/principal.html');
+});
+
+/* function guardar() {
+	const text = document.querySelector('p.footer__texto');
+	console.log(text.textContent);
+} */
+
+/* app.get('/', (req, res) => {
+	res.send('Hola' + req.body.); */
+/* const text = document.querySelector('p.footer__texto');
+	console.log(text.textContent); */
+
+/* 	let newHistorial = new Historial({
+		resultado: req.body.resultado,
+	});
+	newHistorial.save();*/ /* 
+	res.redirect('/principal.html'); */
+/* }); */
+
+/* app.post('/', async (req, res) => {
+	const text = document.querySelector('p.diagnostic');
+	const { result } = text.textContent;
+	const historial = new Historial({ result });
+	await historial.save();
+	res.redirect('/principal.html');
+}); */
+
+/* app.post('/insertar', (req, res) => {
+	console.log('POST /insertar');
+	console.log(req.body);
+
+	let historial = new Historial();
+	historial.fecha = req.body.fecha;
+	historial.resultado = req.body.resultado;
 
 	historial.save((err, historialAll) => {
-		if (err) res.status(500).send({message: `Error al guardar:  ${err}`})
+		if (err) res.status(500).send({ message: `Error al guardar:  ${err}` });
 
-		res.status(200).send({historial: historialAll})
-
-	})
-
+		res.status(200).send({ historial: historialAll });
+	});
 });
- //METODO GET PARA OBTENER HISTORIAL
+//METODO GET PARA OBTENER HISTORIAL
 app.get('/historial', (req, res) => {
-    Historial.find({}, (err, historial) => {
-		if(err) return res.status(500).send({message: `Error a realizar la petición: ${err}`})
-		if (!historial) return res.status(404).send({message: `El registro existe`})
+	Historial.find({}, (err, historial) => {
+		if (err)
+			return res
+				.status(500)
+				.send({ message: `Error a realizar la petición: ${err}` });
+		if (!historial)
+			return res.status(404).send({ message: `El registro existe` });
 
-		res.send(200, { historial })
-	})
-	
-});
-
+		res.send(200, { historial });
+	});
+}); */
 
 app.listen(3000, () => {
 	console.log('server started');

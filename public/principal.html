@@ -58,7 +58,7 @@
 						>Tipos de Trastornos Psicológicos</a
 					>
 					<a class="nav__enlace" href="/noticias.html">Noticias</a>
-					<a class="nav__enlace" href="/historial.html">Historial</a>
+					<a class="nav__enlace" href="/historial">Historial</a>
 					<a class="nav__enlace" href="/index.html">Cerrar sesión</a>
 				</div>
 			</nav>
@@ -92,7 +92,7 @@
 					/>
 				</div>
 
-				<div class="chatbot__right">
+				<div class="chatbot__rightP">
 					<!--AQUI VA EL CHATBOT-->
 					<script
 						SameSite="None; Secure"
@@ -105,7 +105,18 @@
 							configUrl:
 								'https://chats.landbot.io/v3/H-1226027-ZL00QR4ST78VOJV6/index.json',
 						});
+
+						/* function guardar() {
+							const text = document.querySelector('p.footer__texto');
+							console.log(text.textContent);
+						} */
 					</script>
+					<!-- <button class="button_bot" onclick="guardar()">Terminar</button> -->
+					<form action="/result" method="POST">
+						<!-- <label id="resultLabel" name="resultado"></label> -->
+						<input id="resultLabel" name="resultado" type="text" value="" />
+						<button class="button_bot" type="submit">Terminar</button>
+					</form>
 				</div>
 			</div>
 		</section>

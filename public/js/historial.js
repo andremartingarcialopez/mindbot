@@ -1,19 +1,16 @@
-'use strict'
+'use strict';
 const mongoose = require('mongoose');
 //const bcrypt = require('bcrypt');
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
-
-const HistorialSchema = Schema({
-	fecha: { type: String, required: true },
-	resultado: { type: String, required: true, unique: true },
- // created_at: { type: Date, default: Date.now }
+const historialSchema = Schema({
+	fecha: { type: String },
+	resultado: { type: String },
+	// created_at: { type: Date, default: Date.now }
 });
 
-
-
-////Obtener fecha 
+////Obtener fecha
 //let date = new Date()
 
 ///let day = date.getDate()
@@ -21,10 +18,9 @@ const HistorialSchema = Schema({
 //let year = date.getFullYear()
 
 //if(month < 10){
-  //console.log(`${day}-0${month}-${year}`)
+//console.log(`${day}-0${month}-${year}`)
 //}else{
-  //console.log(`${day}-${month}-${year}`)
+//console.log(`${day}-${month}-${year}`)
 //}
 
-
-module.exports = mongoose.model('Historial', HistorialSchema);
+module.exports = mongoose.model('Historial', historialSchema);

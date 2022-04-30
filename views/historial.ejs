@@ -41,10 +41,22 @@
                                 <th>Resultado</th>
                             </tr>
                      </thead>
-                     <tbody id= "data"></tbody>
-                    </table>    
+                     <tbody>
+                        <%historialList.forEach(historial=>{%>
+                            <tr>
+                                <td>
+                                    <%= historial.fecha%>
+                                </td>
+                                <td>
+                                    <%= historial.resultado%>
+                                </td>
+                            </tr>
+                        <%})%>
+                     </tbody>
+                    </table>
+                     
             </div>
-            <script>
+            <!-- <script>
                 let url = 'http://localhost:3000/historial/';
                   fetch(url)
                       .then( response => response.json() )
@@ -60,7 +72,7 @@
                       //document.getElementById('data').innerHTML = body
                       console.log(body);
                   }
-              </script>
+              </script> -->
                        <!--  <table id = "historial">
                     <thead>
                         <tr>
