@@ -85,7 +85,9 @@ app.post('/result', function (req, res) {
 		fecha: fecha,
 		resultado: req.body.resultado,
 	});
-	newHistorial.save();
+	if (req.body.resultado) {
+		newHistorial.save();
+	}
 	res.redirect('/principal.html');
 });
 

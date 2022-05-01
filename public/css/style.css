@@ -284,14 +284,13 @@ a {
 .button_bot {
 	color: #ffff;
 	background: rgb(108, 148, 174);
-	border: 1 solid rgb(108, 148, 174);
+	border: none;
 	font-size: large;
 	height: 50px;
 	width: 60rem;
 }
 .button_bot:hover {
-	color: #151617;
-	background-color: hsl(224, 19%, 89%);
+	background-color: #7a9eb5;
 }
 @media (max-width: 830px) {
 	.chatbot__msj {
