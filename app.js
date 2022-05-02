@@ -7,6 +7,7 @@ const ejs = require('ejs');
 
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
+const mysql = require('mysql');
 const User = require('./public/user');
 const Historial = require('./public/js/historial.js');
 //const { connect } = require('http2');
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '/public')));
 
+const PORT = process.env.PORT || 3000;
 //URI A BASE DE DATOS CON MONGODB
 
 // CONEXIÓN A LA BASE DE DATOS
@@ -33,11 +35,32 @@ connection.once('error', (err) => {
 	console.log('Error connecting', err);
 });
 
+// CONEXIÓN A LA BASE DE DATOS MONGO MYSQL
+const conexion = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password: '',
+	database: 'mindbot'
+  });
+
+  conexion.connect(error => {
+	if(error) throw error;
+	console.log ('Connected to MySQL!')
+});
+
 // METODO PARA REGISTRAR USUARIOS
 app.post('/register', async (req, res) => {
 	const { name, email, password } = req.body;
 	const user = new User({ name, email, password });
 	await user.save();
+
+	const sql = 'INSERT INTO users SET ?';
+	const Obj ={
+		name: req.body.name,
+		email: req.body.email,
+		password: req.body.password
+	}
+	conexion.query(sql, Obj)
 	res.redirect('/iniciar_sesion.html');
 });
 
@@ -88,6 +111,12 @@ app.post('/result', function (req, res) {
 	if (req.body.resultado) {
 		newHistorial.save();
 	}
+	const sql = 'INSERT INTO historial SET ?';
+	const historial ={
+		fecha: req.body.fecha,
+		resultado: req.body.resultado
+	}
+	conexion.query(sql, historial)
 	res.redirect('/principal.html');
 });
 
