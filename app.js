@@ -20,11 +20,18 @@ app.use(express.static(path.join(__dirname, '/public')));
 const PORT = process.env.PORT || 3000;
 //URI A BASE DE DATOS CON MONGODB
 
-// CONEXIÓN A LA BASE DE DATOS
-mongoose.connect(
+// CONEXIÓN A LA BASE DE DATOS NUBE
+/* mongoose.connect(
 	'mongodb+srv://admin:Admin.123@chatbot.4nzz7.mongodb.net/chatbot',
 	{ useNewUrlParser: true, useUnifiedTopology: true }
-);
+); */
+
+// CONEXIÓN A LA BASE DE DATOS LOCAL
+mongoose.connect('mongodb://127.0.0.1:27017/chatbot', {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+});
+
 const connection = mongoose.connection;
 
 connection.once('open', () => {
@@ -40,12 +47,12 @@ const conexion = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	password: '',
-	database: 'mindbot'
-  });
+	database: 'mindbot',
+});
 
-  conexion.connect(error => {
-	if(error) throw error;
-	console.log ('Connected to MySQL!')
+conexion.connect((error) => {
+	if (error) throw error;
+	console.log('Connected to MySQL!');
 });
 
 // METODO PARA REGISTRAR USUARIOS
@@ -55,12 +62,12 @@ app.post('/register', async (req, res) => {
 	await user.save();
 
 	const sql = 'INSERT INTO users SET ?';
-	const Obj ={
+	const Obj = {
 		name: req.body.name,
 		email: req.body.email,
-		password: req.body.password
-	}
-	conexion.query(sql, Obj)
+		password: req.body.password,
+	};
+	conexion.query(sql, Obj);
 	res.redirect('/iniciar_sesion.html');
 });
 
@@ -112,11 +119,11 @@ app.post('/result', function (req, res) {
 		newHistorial.save();
 	}
 	const sql = 'INSERT INTO historial SET ?';
-	const historial ={
+	const historial = {
 		fecha: req.body.fecha,
-		resultado: req.body.resultado
-	}
-	conexion.query(sql, historial)
+		resultado: req.body.resultado,
+	};
+	conexion.query(sql, historial);
 	res.redirect('/principal.html');
 });
 
