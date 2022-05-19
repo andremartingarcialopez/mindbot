@@ -21,16 +21,16 @@ const PORT = process.env.PORT || 3000;
 //URI A BASE DE DATOS CON MONGODB
 
 // CONEXIÓN A LA BASE DE DATOS NUBE
-/* mongoose.connect(
+ mongoose.connect(
 	'mongodb+srv://admin:Admin.123@chatbot.4nzz7.mongodb.net/chatbot',
 	{ useNewUrlParser: true, useUnifiedTopology: true }
-); */
+); 
 
 // CONEXIÓN A LA BASE DE DATOS LOCAL
-mongoose.connect('mongodb://127.0.0.1:27017/chatbot', {
+/*mongoose.connect('mongodb://127.0.0.1:27017/chatbot', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
-});
+});*/
 
 const connection = mongoose.connection;
 
@@ -42,7 +42,7 @@ connection.once('error', (err) => {
 	console.log('Error connecting', err);
 });
 
-// CONEXIÓN A LA BASE DE DATOS MONGO MYSQL
+// CONEXIÓN A LA BASE DE DATOS MYSQL
 const conexion = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
@@ -96,17 +96,38 @@ app.post('/authenticate', async (req, res) => {
 			});
 		}
 	});
+
+	conexion.query('SELECT * FROM users WHERE email = ?', [email], (err, rows) => {
+		if(rows.length > 0) {
+			res.redirect('/principal.html');
+		} else {
+		  console.log('not');
+		}
+
+	});
 });
 
 app.set('view engine', 'ejs');
 
 app.get('/historial', (req, res) => {
-	Historial.find({}, function (err, historial) {
+///*****RESPALDO MONGO DB*****
+	/*Historial.find({}, function (err, historial) {
 		res.render('historial', {
-			historialList: historial,
+			historialList: historial
 		});
-	});
+		
+	});*/
+
+///*****RESPALDO MYSQL*****
+	conexion.query('SELECT * FROM historial', (err, historial) => {
+		res.render('historial', {
+			historialList: historial
+		});
+  });
 });
+
+
+
 app.post('/result', function (req, res) {
 	const date = new Date();
 	const fecha = date.toLocaleDateString();
@@ -119,9 +140,9 @@ app.post('/result', function (req, res) {
 		newHistorial.save();
 	}
 	const sql = 'INSERT INTO historial SET ?';
-	const historial = {
-		fecha: req.body.fecha,
-		resultado: req.body.resultado,
+	let historial = {
+		fecha: fecha,
+		resultado: req.body.resultado
 	};
 	conexion.query(sql, historial);
 	res.redirect('/principal.html');
