@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 //URI A BASE DE DATOS CON MONGODB
 
 // CONEXIÓN A LA BASE DE DATOS NUBE
- mongoose.connect(
+mongoose.connect(
 	'mongodb+srv://admin:Admin.123@chatbot.4nzz7.mongodb.net/chatbot',
 	{ useNewUrlParser: true, useUnifiedTopology: true }
 ); 
@@ -97,33 +97,33 @@ app.post('/authenticate', async (req, res) => {
 		}
 	});
 
-	conexion.query('SELECT * FROM users WHERE email = ?', [email], (err, rows) => {
+	/*conexion.query('SELECT * FROM users WHERE email = ?', [email], (err, rows) => {
 		if(rows.length > 0) {
 			res.redirect('/principal.html');
 		} else {
 		  console.log('not');
 		}
 
-	});
+	});*/
 });
 
 app.set('view engine', 'ejs');
 
 app.get('/historial', (req, res) => {
 ///*****RESPALDO MONGO DB*****
-	/*Historial.find({}, function (err, historial) {
+	Historial.find({}, function (err, historial) {
 		res.render('historial', {
 			historialList: historial
 		});
 		
-	});*/
+	});
 
 ///*****RESPALDO MYSQL*****
-	conexion.query('SELECT * FROM historial', (err, historial) => {
+	/*conexion.query('SELECT * FROM historial', (err, historial) => {
 		res.render('historial', {
 			historialList: historial
 		});
-  });
+  });*/
 });
 
 
@@ -139,15 +139,15 @@ app.post('/result', function (req, res) {
 	if (req.body.resultado) {
 		newHistorial.save();
 	}
+
 	const sql = 'INSERT INTO historial SET ?';
-	let historial = {
+	const historial = {
 		fecha: fecha,
 		resultado: req.body.resultado
 	};
 	conexion.query(sql, historial);
 	res.redirect('/principal.html');
 });
-
 /* function guardar() {
 	const text = document.querySelector('p.footer__texto');
 	console.log(text.textContent);

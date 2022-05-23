@@ -18,6 +18,7 @@ table{
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;
+
 }
 
 th, td{
@@ -28,6 +29,8 @@ thead{
 	background-color: #6ca4ff;
 	border-bottom: solid 5px #7acaf0;
 	color: white;
+	position: sticky;
+	top: 0;
 }
 
 tr:nth-child(even){
@@ -37,4 +40,9 @@ tr:nth-child(even){
 tr:hover td{
 	background-color: #b4c8c9;
 	color: white;
+}
+
+.tablaHistorial {
+	overflow-y: scroll;
+	height: 50vh;
 }
