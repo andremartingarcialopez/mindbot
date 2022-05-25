@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
 mongoose.connect(
 	'mongodb+srv://admin:Admin.123@chatbot.4nzz7.mongodb.net/chatbot',
 	{ useNewUrlParser: true, useUnifiedTopology: true }
-); 
+);
 
 // CONEXIÓN A LA BASE DE DATOS LOCAL
 /*mongoose.connect('mongodb://127.0.0.1:27017/chatbot', {
@@ -43,7 +43,7 @@ connection.once('error', (err) => {
 });
 
 // CONEXIÓN A LA BASE DE DATOS MYSQL
-const conexion = mysql.createConnection({
+/* const conexion = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
 	password: '',
@@ -53,7 +53,7 @@ const conexion = mysql.createConnection({
 conexion.connect((error) => {
 	if (error) throw error;
 	console.log('Connected to MySQL!');
-});
+}); */
 
 // METODO PARA REGISTRAR USUARIOS
 app.post('/register', async (req, res) => {
@@ -110,23 +110,20 @@ app.post('/authenticate', async (req, res) => {
 app.set('view engine', 'ejs');
 
 app.get('/historial', (req, res) => {
-///*****RESPALDO MONGO DB*****
+	///*****RESPALDO MONGO DB*****
 	Historial.find({}, function (err, historial) {
 		res.render('historial', {
-			historialList: historial
+			historialList: historial,
 		});
-		
 	});
 
-///*****RESPALDO MYSQL*****
+	///*****RESPALDO MYSQL*****
 	/*conexion.query('SELECT * FROM historial', (err, historial) => {
 		res.render('historial', {
 			historialList: historial
 		});
   });*/
 });
-
-
 
 app.post('/result', function (req, res) {
 	const date = new Date();
@@ -143,7 +140,7 @@ app.post('/result', function (req, res) {
 	const sql = 'INSERT INTO historial SET ?';
 	const historial = {
 		fecha: fecha,
-		resultado: req.body.resultado
+		resultado: req.body.resultado,
 	};
 	conexion.query(sql, historial);
 	res.redirect('/principal.html');

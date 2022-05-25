@@ -1,27 +1,30 @@
 {
-  "name": "mindbot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andremartingarcialopez/mindbot.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andremartingarcialopez/mindbot/issues"
-  },
-  "homepage": "https://github.com/andremartingarcialopez/mindbot#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "ejs": "^3.1.7",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.9",
-    "mysql": "^2.18.1",
-    "python": "^0.0.4"
-  }
+	"name": "mindbot",
+	"version": "1.0.0",
+	"description": "1. npm init\r 2. npm i express bcrypt mongoose\r 3. npm i nodemon o npm install -g nodemon\r 4. npm i mysql\r 5. nodemon app",
+	"main": "index.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andremartingarcialopez/mindbot.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/andremartingarcialopez/mindbot/issues"
+	},
+	"homepage": "https://github.com/andremartingarcialopez/mindbot#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"ejs": "^3.1.7",
+		"express": "^4.18.1",
+		"mongoose": "^6.3.4",
+		"mysql": "^2.18.1",
+		"python": "^0.0.4"
+	},
+	"engines": {
+		"node": "16.15.0"
+	}
 }
